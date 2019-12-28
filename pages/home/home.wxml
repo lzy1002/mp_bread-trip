@@ -1,2 +1,6 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<my-search-bar></my-search-bar>
+
+<my-swiper swiperData="{{indexData[0].data[0]}}"></my-swiper>
+
+<my-trips-container tirpsData="{{indexData}}"></my-trips-container>

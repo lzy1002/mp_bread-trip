@@ -1,0 +1,72 @@
+<!--pages/trip-info/childrenCpts/my-trip-info-top/my-trip-info-top.wxml-->
+<view class="trip-top">
+
+  <view class="user">
+    <view class="avatar-box">
+      <image src="{{topData.user.avatar_m}}" class="avatar" mode="widthFix"></image>
+    </view>
+    <view class="user-name">by {{topData.user.name}}</view>
+  </view>
+
+  <view class="title">{{topData.name}}</view>
+
+  <view class="line"></view>
+
+  <view class="params">
+    <view class="params-item">
+      <view class="first-day">{{topData.first_day}}</view>
+      <view>{{topData.day_count}}天</view>
+    </view>
+    <view class="params-item">
+      <view>里程</view>
+      <view>{{topData.mileage}}</view>
+    </view>
+    <view class="params-item">
+      <view>喜欢</view>
+      <view>{{topData.recommendations}}</view>
+    </view>
+    <view class="params-item">
+      <view>打赏</view>
+      <view>{{topData.reward_count}}</view>
+    </view>
+  </view>
+
+  <view class="process">
+    <view class="precess-item-box">
+      <view class="process-item">
+        <image src="/assets/images/common/airport.png" mode="widthFix"></image>
+        <text class="num">{{topData.poi_infos_count.flight}}</text>
+        <text class="name">航班</text>
+      </view>
+      <view class="process-item">
+        <image src="/assets/images/common/hotel.png" mode="widthFix"></image>
+        <text class="num">{{topData.poi_infos_count.hotel}}</text>
+        <text class="name">旅店</text>
+      </view>
+      <view class="process-item">
+        <image src="/assets/images/common/sights.png" mode="widthFix"></image>
+        <text class="num">{{topData.poi_infos_count.sights}}</text>
+        <text class="name">景点</text>
+      </view>
+      <view class="process-item">
+        <image src="/assets/images/common/mall.png" mode="widthFix"></image>
+        <text class="num">{{topData.poi_infos_count.mall}}</text>
+        <text class="name">购物</text>
+      </view>
+    </view>
+
+    <view class="address">
+      <view style="background-image: url('{{topData.covered_countries[0].icon}}')" class="city"></view>
+      <view class="text">
+        <block wx:for="{{topData.cities}}" wx:key="index">
+          <text>{{item}}<text class="doc" wx:if="{{index !== topData.cities.length - 1}}">·</text></text>
+        </block>
+      </view>
+      <view class="ellipsis">
+        <image src="/assets/images/common/more.png"></image>
+      </view>
+    </view>
+
+    <view class="more">查看线路日程</view>
+  </view>
+</view>

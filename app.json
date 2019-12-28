@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/trip-info/trip-info"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#4abdcc",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "list": [

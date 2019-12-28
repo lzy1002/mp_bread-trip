@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-trip-info-top": "./childrenCpts/my-trip-info-top/my-trip-info-top"
+  }
+}

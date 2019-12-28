@@ -1,0 +1,6 @@
+<!--pages/home/childrenCpts/my-tirps-container/my-tirps-container.wxml-->
+<view class="trips-container">
+  <block wx:for="{{tirpsData}}" wx:key="index" wx:if="{{index !== 0}}">
+    <my-trip-item tripItemData="{{item}}"></my-trip-item>
+  </block>
+</view>

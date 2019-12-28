@@ -1,0 +1,2 @@
+<!--pages/trip/trip.wxml-->
+<my-trip-info-top topData="{{topData}}"></my-trip-info-top>

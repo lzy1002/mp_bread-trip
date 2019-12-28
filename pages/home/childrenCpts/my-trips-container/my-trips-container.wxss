@@ -1,0 +1,4 @@
+/* pages/home/childrenCpts/my-tirps-container/my-tirps-container.wxss */
+.trips-container {
+  padding: 30rpx 30rpx 0;
+}

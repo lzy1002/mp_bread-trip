@@ -1,0 +1,10 @@
+<!--components/my-search-bar/my-search-bar.wxml-->
+<view class="search-bar">
+  <view class="logo-box">
+    <image src="/assets/images/common/logo.png" mode="widthFix"></image>
+  </view>
+  <view class="search">搜索内容、地点、用户</view>
+  <view class="profile">
+    <image src="/assets/images/common/profile.png" mode="widthFix"></image>
+  </view>
+</view>

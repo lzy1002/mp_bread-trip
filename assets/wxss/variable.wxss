@@ -1,0 +1,15 @@
+page {
+  --color-theme: #4abdcc;
+  --color-background: #fbf7ed;
+  --color-text: #5c5c5c;
+  --color-name: #4a4a4a;
+  --color-title: #a8915e;
+
+  --font-size-small-s: 22rpx;   /* 11 */
+  --font-size-small: 24rpx;   /* 12 */
+  --font-size-medium: 28rpx;    /* 14 */
+  --font-size-medium-x: 32rpx;    /* 16 */
+  --font-size-large: 36rpx;   /* 18 */
+  --font-size-large-m: 40rpx;
+  --font-size-large-x: 42rpx;   /* 21 */
+}

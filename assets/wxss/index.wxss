@@ -1,0 +1,2 @@
+@import "/assets/wxss/reset.wxss";
+@import "/assets/wxss/base.wxss";

@@ -1,0 +1,145 @@
+/* pages/trip-info/childrenCpts/my-trip-info-top/my-trip-info-top.wxss */
+.trip-top {
+
+}
+
+.trip-top .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.trip-top .user .avatar-box {
+  width: 128rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30rpx 0;
+}
+
+.trip-top .user .avatar-box .avatar {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.trip-top .user .user-name {
+  font-size: var(--font-size-small-s);
+}
+
+.trip-top .title {
+  font-size: var(--font-size-large-x);
+  text-align: center;
+  color: var(--color-name);
+  font-weight: 600;
+}
+
+.trip-top .line {
+  border-top: 1px solid #eee;
+  width: 80%;
+  margin: 40rpx auto;
+}
+
+.trip-top .params {
+  display: flex;
+  padding: 0 30rpx;
+  color: #999;
+}
+
+.trip-top .params .params-item {
+  flex: 1;
+  font-size: var(--font-size-small-s);
+  text-align: center;
+  border-right: 1px dashed #c9c9c9;
+}
+
+.trip-top .params .params-item .first-day {
+  color: var(--color-text);
+}
+
+.trip-top .params .params-item:last-child {
+  border: none;
+}
+
+.trip-top .process {
+  position: relative;
+  margin: 30rpx;
+  box-shadow: 0 -6rpx var(--color-theme);
+  background-color: #fff;
+}
+
+.trip-top .process .precess-item-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 20rpx 0;
+}
+
+.trip-top .process .precess-item-box .process-item {
+  flex: 50%;
+  padding: 10rpx 0;
+}
+
+.trip-top .process .precess-item-box .process-item image {
+  width: 58rpx;
+  vertical-align: middle;
+}
+
+.trip-top .process .precess-item-box .process-item .num {
+  vertical-align: middle;
+  font-size: var(--font-size-large-m);
+  padding: 0 10rpx;
+}
+
+.trip-top .process .precess-item-box .process-item .name {
+  vertical-align: middle;
+}
+
+.trip-top .address {
+  margin-right: 80rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 20rpx 0;
+}
+
+.trip-top .address .city {
+  display: inline-block;
+  width: 54rpx;
+  height: 54rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 20rpx;
+}
+
+.trip-top .address .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.trip-top .address .text .doc {
+  margin: 0 6rpx;
+}
+
+.trip-top .address .ellipsis {
+  position: absolute;
+  bottom: 80rpx;
+  transform: translateY(-50%);
+  right: 14rpx;
+  width: 48rpx;
+  height: 26rpx;
+}
+
+.trip-top .address .ellipsis image {
+  width: 100%;
+  height: 100%;
+}
+
+.trip-top .process .more {
+  height: 56rpx;
+  background-color: #f2f2f2;
+  color: #999;
+  text-align: center;
+  line-height: 56rpx;
+  box-shadow: 0 6rpx #c9c9c9;
+}

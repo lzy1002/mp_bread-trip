@@ -1,5 +1,5 @@
-// pages/home/home.js
-import {getIndexData} from "../../api/home.js";
+// pages/trip/trip.js
+import {getTripData, TripTop} from "../../api/tripInfo.js";
 
 Page({
 
@@ -7,25 +7,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    indexData: [],
-
-
+    tripData: {},
+    topData: {}
   },
-  getIndexData() {
-    getIndexData().then(res => {
-      console.log(res);
-      this.setData({
-        indexData: res.data.data.elements
-      })
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getIndexData();
+    console.log(options.id);
+    const id = options.id;
+    this.getTripData(id);
+  },
+  getTripData(id) {
+    getTripData(id).then(res => {
+      console.log(res);
+      const tripData = res.data;
+      const topData = new TripTop(tripData);
+      this.setData({
+        tripData,
+        topData
+      })
+      console.log(this.data.topData);
+    })
   },
 
   /**

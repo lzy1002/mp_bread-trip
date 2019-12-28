@@ -1,0 +1,8 @@
+<!--pages/home/childrenCpts/my-swiper/my-swiper.wxml-->
+<swiper class="swiper" style="height: {{maxHeight}}px" circular indicator-dots indicator-active-color="#4abdcc">
+  <block wx:for="{{swiperData}}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <image src="{{item.image_url}}" bind:load="imageLoad"></image>
+    </swiper-item>
+  </block>
+</swiper>

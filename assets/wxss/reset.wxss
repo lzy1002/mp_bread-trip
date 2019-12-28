@@ -1,0 +1,13 @@
+@import "/assets/wxss/variable.wxss";
+
+page {
+  color: var(--color-text);
+  font-size: var(--font-size-medium);
+  background-color: var(--color-background);
+}
+
+page, view, textarea, input, label, form, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
