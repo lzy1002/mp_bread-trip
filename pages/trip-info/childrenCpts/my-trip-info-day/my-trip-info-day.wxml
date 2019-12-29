@@ -1,0 +1,17 @@
+<!--pages/trip-info/childrenCpts/my-trip-info-day/my-trip-info-day.wxml-->
+<view class="day">
+  <view class="day-title">
+    <view class="circle"></view>
+    <view class="date-box">
+      <text>{{day.date}}</text>
+      <text>第{{day.day}}天</text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <block wx:for="{{day.waypoints}}" wx:key="index">
+    <view bind:tap="waypointTap" data-trip_id="{{item.trip_id}}" data-id="{{item.id}}">
+      <my-waypoint waypointData="{{item}}"></my-waypoint>
+    </view>
+    <view class="line"></view>
+  </block>
+</view>

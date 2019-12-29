@@ -117,7 +117,12 @@
   vertical-align: middle;
 }
 
+.trip-top .address .text text {
+  font-size: var(--font-size-medium);
+}
+
 .trip-top .address .text .doc {
+  font-size: var(--font-size-medium);
   margin: 0 6rpx;
 }
 

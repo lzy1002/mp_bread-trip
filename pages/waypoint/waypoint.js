@@ -1,5 +1,5 @@
-// pages/home/home.js
-import {getIndexData} from "../../api/home.js";
+// pages/waypoint/waypoint.js
+import {getWaypointData, getRepliesData} from "../../api/waypoint.js";
 
 Page({
 
@@ -7,23 +7,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-    indexData: []
+    waypointData: {},
+    repliesData: {}
   },
-  getIndexData() {
-    getIndexData().then(res => {
+
+  getWaypointData(tripId, id) {
+    getWaypointData(tripId, id).then(res => {
       console.log(res);
+      const waypointData = res.data;
       this.setData({
-        indexData: res.data.data.elements
+        waypointData
       })
     })
   },
-
+  getRepliesData(tripId, id) {
+    getRepliesData(tripId, id).then(res => {
+      const repliesData = res.data;
+      console.log(res);
+      this.setData({
+        repliesData
+      })
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getIndexData();
+    const {tripId, id} = options;
+    console.log(tripId, id);
+    this.getWaypointData(tripId, id);
+    this.getRepliesData(tripId, id);
   },
 
   /**

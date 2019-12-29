@@ -62,6 +62,20 @@
 					"pathName": "pages/trip-info/trip-info",
 					"query": "id=2387365028",
 					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "waypoint",
+					"pathName": "pages/waypoint/waypoint",
+					"query": "tripId=2387350453&id=2370862090",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日程",
+					"pathName": "pages/schedule/schedule",
+					"query": "tripId=2387365028",
+					"scene": null
 				}
 			]
 		}

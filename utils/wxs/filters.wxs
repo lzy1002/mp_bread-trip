@@ -1,0 +1,8 @@
+var toFixed = function(num, size) {
+  var num = num || 0;
+  return num.toFixed(size);
+}
+
+module.exports = {
+  toFixed: toFixed
+}

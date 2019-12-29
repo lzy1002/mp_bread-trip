@@ -1,0 +1,2 @@
+<!--pages/schedule/schedule.wxml-->
+<my-schedule-days days="{{scheduleData}}"></my-schedule-days>

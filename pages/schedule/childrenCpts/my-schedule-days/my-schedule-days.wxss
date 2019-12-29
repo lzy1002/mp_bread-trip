@@ -1,0 +1,4 @@
+/* pages/schedule/childrenCpts/my-schedule-days/my-schedule-days.wxss */
+.schedule-days {
+  padding: 32rpx 40rpx 0;
+}

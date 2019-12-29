@@ -21,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goSchedule() {
+      const tripId = this.properties.topData.id;
+      wx.navigateTo({
+        url: `/pages/schedule/schedule?tripId=${tripId}`
+      })
+    }
   }
 })

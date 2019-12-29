@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "my-search-bar": "/components/my-search-bar/my-search-bar",
+    "my-loading": "/components/my-loading/my-loading",
     "my-swiper": "./childrenCpts/my-swiper/my-swiper",
     "my-trips-container": "./childrenCpts/my-trips-container/my-trips-container"
   }

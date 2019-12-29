@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-waypoint": "/components/my-waypoint/my-waypoint",
+    "my-loading": "/components/my-loading/my-loading",
+    "my-replies": "./childrenCpts/my-replies/my-replies"
+  }
+}

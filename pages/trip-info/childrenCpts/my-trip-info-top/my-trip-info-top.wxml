@@ -1,4 +1,6 @@
 <!--pages/trip-info/childrenCpts/my-trip-info-top/my-trip-info-top.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="trip-top">
 
   <view class="user">
@@ -19,7 +21,7 @@
     </view>
     <view class="params-item">
       <view>里程</view>
-      <view>{{topData.mileage}}</view>
+      <view>{{filters.toFixed(topData.mileage, 0)}}km</view>
     </view>
     <view class="params-item">
       <view>喜欢</view>
@@ -67,6 +69,6 @@
       </view>
     </view>
 
-    <view class="more">查看线路日程</view>
+    <view class="more" bind:tap="goSchedule">查看线路日程</view>
   </view>
 </view>

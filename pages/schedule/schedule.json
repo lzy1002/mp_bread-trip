@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-schedule-days": "./childrenCpts/my-schedule-days/my-schedule-days"
+  }
+}

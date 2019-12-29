@@ -1,0 +1,14 @@
+<!--pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.wxml-->
+<view class="schedule-day">
+  <view class="title">
+    <view class="circle-one"></view>
+    <view class="date">
+      <text>第{{day.days}}天</text>
+      <text>{{day.date}}</text>
+    </view>
+  </view>
+  <view class="line"></view>
+  
+
+
+</view>

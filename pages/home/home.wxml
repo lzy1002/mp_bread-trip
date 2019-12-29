@@ -4,3 +4,5 @@
 <my-swiper swiperData="{{indexData[0].data[0]}}"></my-swiper>
 
 <my-trips-container tirpsData="{{indexData}}"></my-trips-container>
+
+<my-loading wx:if="{{indexData.length <= 0}}"></my-loading>

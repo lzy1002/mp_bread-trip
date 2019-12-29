@@ -1,0 +1,31 @@
+<!--components/my-waypoint/my-waypoint.wxml-->
+<view class="waypoint">
+  <view class="image-box" wx:if="{{waypointData.photo}}">
+    <image src="{{waypointData.photo}}" mode="widthFix"></image>
+    <view class="mask">
+      <view class="mask-left"></view>
+      <view class="left-arrow"></view>
+      <view class="right-arrow"></view>
+      <view class="mask-right"></view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="text">{{waypointData.text}}</view>
+    <view class="date-box">
+      <image src="/assets/images/common/time.png"></image>
+      <text class="date">{{waypointData.local_time}}</text>
+
+      <view class="posi-box" wx:if="{{waypointData.poi || waypointData.province}}">
+        <view class="place" wx:if="{{waypointData.poi}}">
+          <view class="icon icon-place-{{waypointData.poi.category}}"></view>
+          <text>{{waypointData.poi.name}}</text>
+        </view>
+        <view class="posi" wx:elif="{{waypointData.province}}">
+          <view class="icon icon-posi"></view>
+          <text>{{waypointData.country}} {{waypointData.province}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

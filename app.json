@@ -2,7 +2,9 @@
   "pages": [
     "pages/home/home",
     "pages/profile/profile",
-    "pages/trip-info/trip-info"
+    "pages/trip-info/trip-info",
+    "pages/waypoint/waypoint",
+    "pages/schedule/schedule"
   ],
   "window": {
     "backgroundTextStyle": "light",

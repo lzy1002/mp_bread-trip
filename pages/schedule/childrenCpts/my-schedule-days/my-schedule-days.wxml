@@ -1,0 +1,6 @@
+<!--pages/schedule/childrenCpts/my-schedule-days/my-schedule-days.wxml-->
+<view class="schedule-days">
+  <block wx:for="{{days}}" wx:key="index">
+    <my-schedule-day day="{{item}}"></my-schedule-day>
+  </block>
+</view>

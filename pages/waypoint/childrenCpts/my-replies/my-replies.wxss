@@ -1,0 +1,64 @@
+/* pages/waypoint/chilidrenCpts/my-replies/my-replies.wxss */
+.recommend-box {
+  width: 100%;
+}
+
+.recommend-box .title {
+  color: #dfd3b7;
+  font-size: var(--font-size-medium-x);
+  padding: 30rpx 0;
+}
+
+.recommend-box .user-box .user-item {
+  display: inline-block;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 6rpx;
+}
+
+.recommend-box .user-box .user-item image {
+  width: 100%;
+}
+
+.comment-box {
+
+}
+
+.comment-box .title {
+  color: #dfd3b7;
+  font-size: var(--font-size-medium);
+  padding: 30rpx 0;
+}
+
+.comment-box .comment-item {
+  display: flex;
+}
+
+.comment-box .comment-item .avatar-box {
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12rpx;
+}
+
+.comment-box .comment-item .avatar-box image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.comment-box .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-box .content .user-name-box .user-name {
+  color: var(--color-theme);
+}
+
+.comment-box .content .date-box {
+  color: #b0b0b0;
+  font-size: var(--font-size-small);
+}

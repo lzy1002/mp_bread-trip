@@ -1,0 +1,38 @@
+/* pages/trip-info/childrenCpts/my-trip-info-day/my-trip-info-day.wxss */
+.day {
+
+}
+
+.day .day-title {
+  line-height: 24rpx;
+}
+
+.day .day-title .circle {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  border: 8rpx solid #e7ddc6;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  margin-left: 8rpx;
+}
+
+.day .day-title .date-box {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: var(--font-size-medium);
+  color: #a8915e;
+  font-weight: 600;
+}
+
+.day .day-title .date-box text {
+  margin: 0 10rpx;
+}
+
+.day .line {
+  width: 8rpx;
+  height: 36rpx;
+  margin-left: 20rpx;
+  background-color: #e7ddc6;
+}

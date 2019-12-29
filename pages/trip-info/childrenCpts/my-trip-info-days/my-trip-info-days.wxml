@@ -1,0 +1,6 @@
+<!--pages/trip-info/childrenCpts/my-trip-info-days/my-trip-info-days.wxml-->
+<view class="days-box">
+  <block wx:for="{{daysData}}" wx:key="index">
+    <my-trip-info-day day="{{item}}"></my-trip-info-day>
+  </block>
+</view>

@@ -1,0 +1,4 @@
+/* pages/trip-info/childrenCpts/my-trip-info-days/my-trip-info-days.wxss */
+.days-box {
+  padding: 30rpx 30rpx 0;
+}

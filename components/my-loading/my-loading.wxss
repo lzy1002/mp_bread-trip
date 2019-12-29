@@ -1,0 +1,32 @@
+/* components/my-loading/my-loading.wxss */
+.my-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: var(--color-background);
+}
+
+.my-loading .step-box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 93px;
+  width: 113px;
+  background-image: url("http://m.breadtrip.com/static/img/loading@2x.cfab2b3.png");
+  background-size: auto 93px;
+  animation: step 1.5s steps(31) 0ms infinite normal backwards;
+}
+
+@keyframes step {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -3518px 0;
+  }
+}

@@ -1,0 +1,29 @@
+<!--pages/waypoint/chilidrenCpts/my-replies/my-replies.wxml-->
+<view class="recommend-box">
+  <view class="title">{{repliesData.recommender_count}}人喜欢</view>
+  <view class="user-box">
+    <block wx:for="{{repliesData.recommenders}}" wx:key="index">
+      <view class="user-item">
+        <image src="{{item.avatar_m}}" mode="widthFix"></image>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="comment-box">
+  <view class="title">{{repliesData.comment_count}}人评价</view>
+  <block wx:for="{{repliesData.comments}}" wx:key="date_added">
+    <view class="comment-item">
+      <view class="avatar-box">
+        <image src="{{item.user.avatar_m}}" mode="widthFix"></image>
+      </view>
+      <view class="content">
+        <view class="user-name-box">
+          <text class="user-name">{{item.user.name}}: </text>
+          <text class="text">{{item.comment}}</text>
+        </view>
+        <view class="date-box">{{item.date_added}}</view>
+      </view>
+    </view>
+  </block>
+</view>

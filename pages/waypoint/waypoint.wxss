@@ -1,0 +1,4 @@
+/* pages/waypoint/waypoint.wxss */
+page {
+  padding: 40rpx 30rpx 100rpx;
+}

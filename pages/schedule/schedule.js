@@ -1,5 +1,5 @@
-// pages/home/home.js
-import {getIndexData} from "../../api/home.js";
+// pages/schedule/schedule.js
+import {getScheduleData} from "../../api/schedule.js";
 
 Page({
 
@@ -7,23 +7,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    indexData: []
+    scheduleData: []
   },
-  getIndexData() {
-    getIndexData().then(res => {
-      console.log(res);
-      this.setData({
-        indexData: res.data.data.elements
-      })
-    })
-  },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getIndexData();
+    console.log(options);
+    const tripId = options.tripId;
+    this.getScheduleData(tripId);
+  },
+  getScheduleData(tripId) {
+    getScheduleData(tripId).then(res => {
+      console.log(res);
+      const scheduleData = res.data;
+      this.setData({
+        scheduleData
+      })
+    })
   },
 
   /**

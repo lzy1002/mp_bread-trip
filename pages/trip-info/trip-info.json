@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "my-trip-info-top": "./childrenCpts/my-trip-info-top/my-trip-info-top"
+    "my-trip-info-top": "./childrenCpts/my-trip-info-top/my-trip-info-top",
+    "my-trip-info-days": "./childrenCpts/my-trip-info-days/my-trip-info-days",
+    "my-loading": "/components/my-loading/my-loading"
   }
 }

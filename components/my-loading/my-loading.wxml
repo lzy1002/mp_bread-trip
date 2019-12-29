@@ -1,0 +1,4 @@
+<!--components/my-loading/my-loading.wxml-->
+<view class="my-loading">
+  <view class="step-box"></view>
+</view>

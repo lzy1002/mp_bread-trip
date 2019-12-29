@@ -1,0 +1,31 @@
+/* pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.wxss */
+.schedule-day {
+  width: 100%;
+}
+
+.schedule-day .line {
+  height: 36rpx;
+  width: 8rpx;
+  margin-left: 20rpx;
+  background-color: #e7ddc6;
+}
+
+.schedule-day .title {
+  line-height: 24rpx;
+}
+
+.schedule-day .title .circle-one {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  border: 8rpx solid #e7ddc6;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 8rpx;
+}
+
+.schedule-day .title .date {
+  display: inline-block;
+  vertical-align: middle;
+}

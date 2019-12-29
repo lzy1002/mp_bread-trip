@@ -1,0 +1,6 @@
+<!--pages/waypoint/waypoint.wxml-->
+<my-waypoint waypointData="{{waypointData}}"></my-waypoint>
+
+<my-replies repliesData="{{repliesData}}"></my-replies>
+
+<my-loading wx:if="{{!waypointData.user}}"></my-loading>

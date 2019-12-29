@@ -1,2 +1,6 @@
 <!--pages/trip/trip.wxml-->
-<my-trip-info-top topData="{{topData}}"></my-trip-info-top>
+<my-trip-info-top wx:if="{{topData.user}}" topData="{{topData}}"></my-trip-info-top>
+
+<my-trip-info-days daysData="{{tripData.days}}"></my-trip-info-days>
+
+<my-loading wx:if="{{!tripData.user}}"></my-loading>
