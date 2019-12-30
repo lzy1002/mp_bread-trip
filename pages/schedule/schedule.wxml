@@ -1,2 +1,4 @@
 <!--pages/schedule/schedule.wxml-->
 <my-schedule-days days="{{scheduleData}}"></my-schedule-days>
+
+<my-loading wx:if="{{scheduleData.length <= 0}}"></my-loading>

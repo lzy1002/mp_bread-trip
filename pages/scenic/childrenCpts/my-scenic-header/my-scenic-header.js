@@ -1,20 +1,12 @@
-// pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.js
+// pages/scenic/childrenCpts/my-scenic-header/my-scenic-header.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    day: {
+    headerData: {
       type: Object,
       value: {}
-    },
-    index: {
-      type: Number,
-      value: 0
-    },
-    length: {
-      type: Number,
-      value: 0
     }
   },
 

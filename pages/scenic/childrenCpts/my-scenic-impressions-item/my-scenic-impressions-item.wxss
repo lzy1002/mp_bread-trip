@@ -1,0 +1,39 @@
+/* pages/scenic/childrenCpts/my-scenic-impressions-item/my-scenic-impressions-item.wxss */
+.impressions-item {
+  width: 100%;
+  padding: 40rpx 0;
+}
+
+.impressions-item .user-box {
+  display: flex
+}
+
+.impressions-item .user-box .avatar-box {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 20rpx;
+}
+
+.impressions-item .user-box .avatar-box image {
+  width: 100%;
+}
+
+.impressions-item .user-box .content .trip-name {
+  color: #5acbda;
+}
+
+.impressions-item .content {
+  margin: 0 20rpx 30rpx;
+}
+
+.impressions-item .scroll-view {
+  display: flex;
+  width: 100%;
+  margin-left: 30rpx;
+}
+
+.impressions-item .scroll-view image {
+  height: 240rpx;
+}

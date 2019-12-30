@@ -1,0 +1,6 @@
+<!--components/my-rating/my-rating.wxml-->
+<view class="rating rating-{{ratingType}}">
+  <block wx:for="{{classList}}" wx:key="index">
+    <view class="star {{item}}"></view>
+  </block>
+</view>

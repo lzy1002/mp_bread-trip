@@ -1,14 +1,23 @@
 <!--pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.wxml-->
 <view class="schedule-day">
   <view class="title">
-    <view class="circle-one"></view>
+    <view class="circle {{index === 0 ? 'circle-one' : 'circle-other'}}"></view>
     <view class="date">
-      <text>第{{day.days}}天</text>
+      <text>第 {{day.days}} 天</text>
       <text>{{day.date}}</text>
     </view>
   </view>
   <view class="line"></view>
-  
 
+  <view class="schedule-item-box">
+    <block wx:for="{{day.places}}" wx:key="index">
+      <my-schedule-item scheduleItem="{{item}}"></my-schedule-item>
+    </block>
 
+    <view class="divider" wx:if="{{index !== length - 1}}">
+      <view class="row-line"></view>
+      <image src="/assets/images/common/sun.png" mode="widthFix"></image>
+      <view class="row-line"></view>
+    </view>
+  </view>
 </view>

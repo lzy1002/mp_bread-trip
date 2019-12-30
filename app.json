@@ -4,7 +4,8 @@
     "pages/profile/profile",
     "pages/trip-info/trip-info",
     "pages/waypoint/waypoint",
-    "pages/schedule/schedule"
+    "pages/schedule/schedule",
+    "pages/scenic/scenic"
   ],
   "window": {
     "backgroundTextStyle": "light",

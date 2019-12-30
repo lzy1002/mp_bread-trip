@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-scenic-impressions-item": "../my-scenic-impressions-item/my-scenic-impressions-item"
+  }
+}

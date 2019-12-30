@@ -1,0 +1,20 @@
+<!--pages/scenic/childrenCpts/my-scenic-impressions-item/my-scenic-impressions-item.wxml-->
+<view class="impressions-item">
+  <view class="user-box">
+    <view class="avatar-box">
+      <image src="{{impressionsItemData.trip.user.avatar_s}}" mode="widthFix"></image>
+    </view>
+    <view class="content">
+      <text class="user-name">{{impressionsItemData.trip.user.name}}</text>
+      <text> 在</text>
+      <text class="trip-name"> {{impressionsItemData.trip.name}} </text>
+      <text>的路上</text>
+    </view>
+  </view>
+  <view class="content">{{impressionsItemData.trip_text}}</view>
+  <scroll-view class="scroll-view">
+    <block wx:for="{{impressionsItemData.waypoints}}">
+      <image src="{{item.photo_s}}" mode="aspectFit"></image>
+    </block>
+  </scroll-view>
+</view>

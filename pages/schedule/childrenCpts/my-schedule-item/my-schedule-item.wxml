@@ -1,0 +1,25 @@
+<!--pages/schedule/childrenCpts/my-schedule-item/my-shcedule-item.wxml-->
+<view class="schedule-item">
+  <view class="place">
+    <view class="icon-place"></view>
+    <view>{{scheduleItem.place.name}}</view>
+    <view wx:if="{{scheduleItem.pois.length > 0}}" class="place-arrow-box" bind:tap="placeArrowTap">
+      <view class="{{isOpen ? 'arrow-top' : 'arrow-bottom'}}"></view>
+    </view>
+    <view wx:else class="place-arrow-box">
+      <view class="arrow-right"></view>
+    </view>
+  </view>
+  <view class="posi-box {{isOpen ? '' : 'off'}} {{scheduleItem.pois.length <= 0 ? 'border-n' : ''}}" style="height: {{scheduleItem.pois.length * 90 + 4}}rpx;">
+    <block wx:for="{{scheduleItem.pois}}" wx:key="index">
+      <view class="posi-item" bind:tap="posiItemTap" data-scenicid="{{item.id}}">
+        <view class="icon icon-place-{{item.category}}"></view>
+        <view>{{item.name}}</view>
+        <view class="posi-arrow-box">
+          <view class="arrow-right-blue"></view>
+        </view>
+        <view class="border-b" wx:if="{{index !== scheduleItem.pois.length - 1}}"></view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-scenic-header": "./childrenCpts/my-scenic-header/my-scenic-header",
+    "my-scenic-impressions": "./childrenCpts/my-scenic-impressions/my-scenic-impressions"
+  }
+}

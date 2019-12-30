@@ -1,0 +1,64 @@
+/* pages/scenic/childrenCpts/my-scenic-header/my-scenic-header.wxss */
+.icon-avatar-11 {
+  display: inline-block;
+  width: 44rpx;
+  height: 56rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABUCAQAAACc0inlAAAC1klEQVR4Ae3aT0iTcRzHcefWVNbMsFZQFzMY/aeSIojqEElUl4ggukRBdqhDHUKLhDCLguiSt6JuEUEUNjtkEmmQSgaZB1EiJSpIwZnCVPQdNNyGuT1/vr/f77n0+p4nb/gwnx2ePBl20stnKsiTnOjDbCYOwDBrvIoo5yezBlnpRcQy+snUw2LTEcV0Mdc7ikxGFNDCfBoJmIrI5wnZPDAV0UAuN01E1GLlvO6IKqzNcFxnxGGmsWOSSl0Ru0lg1xjbdERsIo4Tv4iqjijjB059ZYXKiAh9uNFNiaqIMB9wq5UiFRFBmpF4jl8akc9jpO5LI06hwlFZRD0qVMsiIjQzxHDyiGNXPPWZIZooUflv20cbdrTg0/kAi2HHU50PsBBj2DFCob6Ic9h1WldEiO/YNUihnojrOHFFR8RWpnBigvWqI4J041QnAbUR13DjkjhCMEV6knXyCPtTiCZRN4VgEnVTCCaRT2GtE791hHwK4STqphBMknuKT6RpnET3FGk1biK2MIVKieyTyKeQTGIRUUea9knUTSGYxNkUch347UXUoVONnYiNTKFTgqh1xB10q7eOuIhuZ60jgtzgBTFiNPGSNmaQmWaSFhpTV0fA+e+Jt0i9kv+o6UOqRxqxBxV2SCJ8tKNCqyTiDKqccBsRZRxVRlnlJqKALlR6zwLnEfdQrcFpRBU6nHQSsZ0JdEhQYTciwjd0GWCJnYgAb9DpNX68f5RzyyriGCYcyRWxgXFM+M3abBEl9GNKL8XzRfiIYdIzfP9GXMW0y3MjDjKDadNUZkasZgQvDFM2GxGiG698pCgZUY2XLiQj7uKl28mIKAN45Qvl6W/Hwr8Xzrji1C1K3XL204GVNvZSSsjWuXyTJEA7ubTiN/FOzT5y2WXmxZ6l5BI2ExEml6DZiP8R+YySzZC5d+8ekc1DcxERuphPB6UmX4UMcIgaajOumgP43f21P4n07QotmZevAAAAAElFTkSuQmCC");
+  background-size: 44rpx 56rpx;
+  background-repeat: no-repeat;
+}
+
+.scenic-header {
+  position:  relative;
+}
+
+.scenic-header .image-box {
+  width: 100%;
+
+}
+
+.scenic-header .image-box .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding-bottom: 58%;
+}
+
+.scenic-header .title {
+  position: relative;
+}
+
+.scenic-header .title .avatar-box {
+  position: absolute;
+  left: 50%;
+  top: -22%;
+  transform: translateX(-50%);
+  width: 130rpx;
+  height: 130rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5acbda;
+  border-radius: 50%;
+  border: 8rpx solid #fbf7ed;
+
+}
+
+.scenic-header .title .name {
+  font-size: var(--font-size-large-x);
+  text-align: center;
+  color: #4a4a4a;
+  padding-top: 70rpx;
+}
+
+.scenic-header .title .rating-box {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.scenic-header .title .desc {
+  width: 78%;
+  text-align: center;
+  margin: 26rpx auto 0;
+  padding-bottom: 66rpx;
+}

@@ -1,0 +1,49 @@
+/* components/my-rating/my-rating.wxss */
+.rating {
+  display: inline-block;
+}
+
+.rating.rating-big .star {
+  display: inline-block;
+  width: 28rpx;
+  height: 26rpx;
+  margin-right: 4rpx;
+  background-size: 26rpx 26rpx;
+  background-repeat: no-repeat;
+}
+
+.rating.rating-big .star.star-all {
+  background-image: url("https://ae01.alicdn.com/kf/Uc0479b1b4a3448d893ff4fc00d77b6c7A.png");
+}
+
+.rating.rating-big .star.star-half {
+  background-image: url("https://ae01.alicdn.com/kf/U0601fbcfc6314f3b9ef05ddc1d9e1bceD.png");
+}
+
+.rating.rating-big .star.star-none {
+  background-image: url("https://ae01.alicdn.com/kf/U2f5c26c7ed684f7d9619f14cf9a841b5M.png");
+}
+
+
+
+
+.rating.rating-small .star {
+  display:  inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 4rpx;
+  background-size: 20rpx 20rpx;
+  background-repeat: no-repeat;
+}
+
+.rating.rating-small .star.star-all {
+  background-image: url("https://ae01.alicdn.com/kf/Ua0c806e54b4b441a8f46277fcf1cc7bd0.png");
+}
+
+.rating.rating-small .star.star-half {
+  background-image: url("https://ae01.alicdn.com/kf/Ua82f36144875485bb5aa6b8619144ac7f.png");
+}
+
+.rating.rating-small .star.star-none {
+  background-image: url("https://ae01.alicdn.com/kf/U946a09e2b5644a5485883fbbf214a54bO.png");
+}

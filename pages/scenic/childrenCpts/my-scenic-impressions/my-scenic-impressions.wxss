@@ -1,0 +1,51 @@
+/* pages/scenic/childrenCpts/my-scenic-impressions/my-scenic-impressions.wxss */
+.scenic-impressions {
+
+}
+
+.scenic-impressions .title {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scenic-impressions .text {
+  position: relative;
+  padding: 0 40rpx;
+  font-size: var(--font-size-medium-x);
+}
+
+.scenic-impressions .text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  transform: translateY(-50%);
+  display: inlne-block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e7ddc6;
+}
+
+.scenic-impressions .text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10rpx;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e7ddc6;
+}
+
+.scenic-impressions .line {
+  flex: 1;
+  height: 0;
+  border-bottom: 1px solid #e7ddc6;
+}
+
+.impressions-box {
+  width: 100%;
+}

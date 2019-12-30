@@ -1,0 +1,14 @@
+<!--pages/scenic/childrenCpts/my-scenic-impressions/my-scenic-impressions.wxml-->
+<view class="scenic-impressions">
+  <view class="title">
+    <view class="line"></view>
+    <view class="text">面包印象</view>
+    <view class="line"></view>
+  </view>
+
+  <view class="impressions-box">
+    <block wx:for="{{impressionsData.data.trips}}" wx:key="index">
+      <my-scenic-impressions-item impressionsItemData="{{item}}"></my-scenic-impressions-item>
+    </block>
+  </view>
+</view>

@@ -76,6 +76,13 @@
 					"pathName": "pages/schedule/schedule",
 					"query": "tripId=2387365028",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "scenic",
+					"pathName": "pages/scenic/scenic",
+					"query": "scenicId=2388522264",
+					"scene": null
 				}
 			]
 		}

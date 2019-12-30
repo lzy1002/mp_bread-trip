@@ -1,20 +1,12 @@
-// pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.js
+// pages/scenic/childrenCpts/my-scenic-impressions/my-scenic-impressions.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    day: {
+    impressionsData: {
       type: Object,
       value: {}
-    },
-    index: {
-      type: Number,
-      value: 0
-    },
-    length: {
-      type: Number,
-      value: 0
     }
   },
 

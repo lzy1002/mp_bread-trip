@@ -12,9 +12,14 @@
 
 .schedule-day .title {
   line-height: 24rpx;
+  color: #a8915e;
 }
 
-.schedule-day .title .circle-one {
+.schedule-day .title text {
+  margin-left: 12rpx;
+}
+
+.schedule-day .title .circle {
   display: inline-block;
   width: 32rpx;
   height: 32rpx;
@@ -25,7 +30,43 @@
   margin-left: 8rpx;
 }
 
+.schedule-day .title .circle.circle-one {
+  border: 8rpx solid #e7ddc6;
+  background-color: #fff;
+}
+
+.schedule-day .title .circle.circle-other {
+  border: 8rpx solid #fbf7ed;
+  background-color: #e7ddc6;
+}
+
 .schedule-day .title .date {
   display: inline-block;
   vertical-align: middle;
+}
+
+.schedule-day .schedule-item-box {
+  margin-left: 20rpx;
+  border-left: 8rpx solid #e7ddc6;
+  padding-left: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.schedule-day .schedule-item-box .divider {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 1%;
+}
+
+.schedule-day .schedule-item-box .divider image {
+  width: 40rpx;
+  height: 40rpx;
+  transform: translateY(45%);
+  margin: 0 10rpx;
+}
+
+.schedule-day .schedule-item-box .divider .row-line {
+  flex: 1;
+  height: 0;
+  border-top: 2px solid #e7ddc6;
 }
