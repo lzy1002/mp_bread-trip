@@ -1,6 +1,7 @@
 /* pages/scenic/childrenCpts/my-scenic-impressions/my-scenic-impressions.wxss */
 .scenic-impressions {
-
+  width: 100%;
+  overflow: hidden;
 }
 
 .scenic-impressions .title {
@@ -26,6 +27,7 @@
   width: 10rpx;
   height: 10rpx;
   background-color: #e7ddc6;
+  border-radius: 50%;
 }
 
 .scenic-impressions .text::after {
@@ -38,6 +40,7 @@
   width: 10rpx;
   height: 10rpx;
   background-color: #e7ddc6;
+  border-radius: 50%;
 }
 
 .scenic-impressions .line {

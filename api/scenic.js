@@ -21,3 +21,13 @@ export class ScenicHeader {
     this.category = scenicInfoData.category;
   }
 }
+
+export class ScenicBasic {
+  constructor(scenicInfoData) {
+    this.description = scenicInfoData.description;
+    this.address = scenicInfoData.address;
+    this.arrival_type = scenicInfoData.arrival_type;
+    this.opening_time = scenicInfoData.opening_time;
+    this.tel = scenicInfoData.tel;
+  }
+}

@@ -1,0 +1,61 @@
+/* pages/scenic/childrenCpts/my-scenic-basic/my-scenic-basic.wxss */
+.scenic-basic {
+
+  margin: 0 20rpx 10rpx;
+}
+
+.scenic-basic .title-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 40rpx auto 0;
+}
+
+.scenic-basic .title-box .title {
+  position: relative;
+  padding: 0 40rpx;
+  font-size: var(--font-size-medium-x);
+}
+
+.scenic-basic .title-box .title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: #e7ddc6;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+}
+
+.scenic-basic .title-box .title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10rpx;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: #e7ddc6;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+}
+
+.scenic-basic .title-box .line {
+  flex: 1;
+  height: 0;
+  border-top: 1px solid #e7ddc6;
+}
+
+.scenic-basic .basic-item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.scenic-basic .basic-item .name {
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-bottom: 28rpx;
+}

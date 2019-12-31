@@ -1,5 +1,5 @@
 <!--pages/scenic/childrenCpts/my-scenic-impressions-item/my-scenic-impressions-item.wxml-->
-<view class="impressions-item">
+<view class="impressions-item" bind:tap="impressionsItemTap">
   <view class="user-box">
     <view class="avatar-box">
       <image src="{{impressionsItemData.trip.user.avatar_s}}" mode="widthFix"></image>
@@ -11,10 +11,10 @@
       <text>的路上</text>
     </view>
   </view>
-  <view class="content">{{impressionsItemData.trip_text}}</view>
-  <scroll-view class="scroll-view">
-    <block wx:for="{{impressionsItemData.waypoints}}">
-      <image src="{{item.photo_s}}" mode="aspectFit"></image>
+  <view class="text">{{impressionsItemData.trip_text}}</view>
+  <scroll-view class="scroll-view" scroll-x>
+    <block wx:for="{{impressionsItemData.waypoints}}" wx:key="index">
+      <image src="{{item.photo_s}}" mode="aspectFit" bind:load="imageLoad" style="width: {{hopeWidthList[index]}}px"></image>
     </block>
   </scroll-view>
 </view>

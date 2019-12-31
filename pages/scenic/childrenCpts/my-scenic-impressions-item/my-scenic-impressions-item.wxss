@@ -2,10 +2,12 @@
 .impressions-item {
   width: 100%;
   padding: 40rpx 0;
+  border-bottom: 1px solid #eee;
 }
 
 .impressions-item .user-box {
-  display: flex
+  display: flex;
+  margin-bottom: 30rpx;
 }
 
 .impressions-item .user-box .avatar-box {
@@ -20,20 +22,25 @@
   width: 100%;
 }
 
+.impressions-item .user-box .content {
+  line-height: 28rpx;
+}
+
 .impressions-item .user-box .content .trip-name {
   color: #5acbda;
 }
 
-.impressions-item .content {
+.impressions-item .text {
   margin: 0 20rpx 30rpx;
+  line-height: 28rpx;
 }
 
 .impressions-item .scroll-view {
-  display: flex;
-  width: 100%;
-  margin-left: 30rpx;
+  height: 240rpx;
+  white-space: nowrap;
 }
 
 .impressions-item .scroll-view image {
   height: 240rpx;
+  margin-right: 4rpx;
 }

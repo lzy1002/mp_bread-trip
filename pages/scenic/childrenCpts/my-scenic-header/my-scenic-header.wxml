@@ -5,7 +5,7 @@
   </view>
 
   <view class="title">
-    <view class="avatar-box">
+    <view class="avatar-box type-{{headerData.category}}">
       <view class="icon-avatar-{{headerData.category}}"></view>
     </view>
     <view class="name">{{headerData.name}}</view>

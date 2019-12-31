@@ -1,5 +1,5 @@
 // pages/scenic/scenic.js
-import {getScenicInfoData, getImpressionsData, ScenicHeader} from "../../api/scenic.js";
+import {getScenicInfoData, getImpressionsData, ScenicHeader, ScenicBasic} from "../../api/scenic.js";
 
 Page({
 
@@ -9,17 +9,20 @@ Page({
   data: {
     scenicInfoData: {},
     headerData: {},
-    impressionsData: {}
+    impressionsData: {},
+    basicData: {}
   },
   getScenicInfoData(scenicId) {
     getScenicInfoData(scenicId).then(res => {
       console.log(res);
       const scenicInfoData = res.data;
       const headerData = new ScenicHeader(scenicInfoData);
+      const basicData = new ScenicBasic(scenicInfoData);
       console.log(headerData);
       this.setData({
         scenicInfoData,
-        headerData
+        headerData,
+        basicData
       })
     })
   },

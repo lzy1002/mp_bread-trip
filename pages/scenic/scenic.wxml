@@ -2,3 +2,7 @@
 <my-scenic-header headerData="{{headerData}}"></my-scenic-header>
 
 <my-scenic-impressions impressionsData="{{impressionsData}}"></my-scenic-impressions>
+
+<my-scenic-basic basicData="{{basicData}}"></my-scenic-basic>
+
+<my-loading wx:if="{{!scenicInfoData.name}}"></my-loading>

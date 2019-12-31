@@ -1,6 +1,8 @@
 {
   "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
     "my-scenic-header": "./childrenCpts/my-scenic-header/my-scenic-header",
-    "my-scenic-impressions": "./childrenCpts/my-scenic-impressions/my-scenic-impressions"
+    "my-scenic-impressions": "./childrenCpts/my-scenic-impressions/my-scenic-impressions",
+    "my-scenic-basic": "./childrenCpts/my-scenic-basic/my-scenic-basic"
   }
 }
