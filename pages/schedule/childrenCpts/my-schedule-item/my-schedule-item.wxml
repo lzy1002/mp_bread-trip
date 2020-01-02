@@ -1,8 +1,10 @@
 <!--pages/schedule/childrenCpts/my-schedule-item/my-shcedule-item.wxml-->
 <view class="schedule-item">
   <view class="place">
-    <view class="icon-place"></view>
-    <view>{{scheduleItem.place.name}}</view>
+    <view class="title-box" bind:tap="placeTap">
+      <view class="icon-place"></view>
+      <view>{{scheduleItem.place.name}}</view>
+    </view>
     <view wx:if="{{scheduleItem.pois.length > 0}}" class="place-arrow-box" bind:tap="placeArrowTap">
       <view class="{{isOpen ? 'arrow-top' : 'arrow-bottom'}}"></view>
     </view>

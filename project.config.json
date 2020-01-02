@@ -71,17 +71,24 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "日程",
 					"pathName": "pages/schedule/schedule",
-					"query": "tripId=2387365028",
+					"query": "tripId=2387350307",
 					"scene": null
 				},
 				{
 					"id": 3,
 					"name": "scenic",
 					"pathName": "pages/scenic/scenic",
-					"query": "scenicId=2388477103",
+					"query": "scenicId=2387350307",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/place/place",
+					"pathName": "pages/place/place",
+					"query": "type=3&placeId=11282",
 					"scene": null
 				}
 			]

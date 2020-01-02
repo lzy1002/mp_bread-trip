@@ -10,8 +10,8 @@
     </view>
     <view class="name">{{headerData.name}}</view>
     <view class="rating-box">
-      <my-rating score="{{headerData.rating}}" ratingType="big"></my-rating>
+      <my-rating wx:if="{{headerData.rating}}" score="{{headerData.rating}}" ratingType="big"></my-rating>
     </view>
-    <view class="desc">{{headerData.recommended_reason}}</view>
+    <view wx:if="{{headerData.recommended_reason}}" class="desc"><text>{{headerData.recommended_reason}}</text></view>
   </view>
 </view>

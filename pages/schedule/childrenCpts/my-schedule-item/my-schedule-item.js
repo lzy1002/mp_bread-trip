@@ -32,6 +32,13 @@ Component({
       wx.navigateTo({
         url: `/pages/scenic/scenic?scenicId=${scenicId}`
       })
+    },
+    placeTap() {
+      const type = this.data.scheduleItem.place.type;
+      const placeId = this.data.scheduleItem.place.id;
+      wx.navigateTo({
+        url: `/pages/place/place?type=${type}&placeId=${placeId}`
+      })
     }
   }
 })

@@ -30,6 +30,7 @@ Component({
   lifetimes: {
     attached() {
       const score = this.properties.score;
+      console.log(score);
       const integer = Math.floor(score);
       const decimal = score - integer;
       const classList = [];
@@ -37,9 +38,7 @@ Component({
         classList.push("star-all");
       }
 
-      if(decimal >= 0.5) {
-        classList.push("star-all");
-      } else if (decimal !== 0) {
+      if(decimal > 0) {
         classList.push("star-half");
       }
 

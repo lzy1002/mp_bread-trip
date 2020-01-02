@@ -1,0 +1,9 @@
+<!--pages/all/childrenCpts/my-all-category/my-all-category.wxml-->
+<view class="all-category">
+  <block wx:for="{{categoryData}}" wx:key="index">
+    <my-all-category-item categoryItemData="{{item}}"></my-all-category-item>
+  </block>
+  <view wx:if="{{categoryData.length > 0}}" class="loading">
+    <image src="/assets/images/common/loading.gif" mode="widthFix"></image>
+  </view>
+</view>

@@ -1,0 +1,75 @@
+/* pages/place/childrenCpts/my-place-hot/my-place-hot.wxss */
+.place-hot {
+  position: relative;
+  z-index: 3;
+  transform: translateY(-30rpx);
+  background-color: var(--color-background);
+  border-radius: 10px 10px 0 0;
+  padding-top: 44rpx;
+}
+
+.place-hot .title-box {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 40rpx;
+}
+
+.place-hot .title-box .line {
+  height: 0;
+  flex: 1;
+  border-top: 1px solid #e7ddc6;
+}
+
+.place-hot .title-box .title {
+  position: relative;
+  padding: 0 40rpx;
+  font-size: var(--font-size-medium-x);
+}
+
+.place-hot .title-box .title::before {
+  content: "";
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e7ddc6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10rpx;
+  transform: translateY(-50%);
+}
+
+.place-hot .title-box .title::after {
+  content: "";
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e7ddc6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10rpx;
+  transform: translateY(-50%);
+}
+
+.place-hot .hot-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.place-hot .hot-box .my-place-hot-item {
+  width: 47%;
+}
+
+.place-hot .more-hot {
+  height: 80rpx;
+  margin: 40rpx 20rpx;
+  border-radius: 80rpx;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  line-height: 80rpx;
+  color: #999;
+}

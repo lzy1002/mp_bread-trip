@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-all-category-item": "../my-all-category-item/my-all-category-item"
+  }
+}

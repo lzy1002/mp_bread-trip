@@ -1,0 +1,43 @@
+/* pages/place/childrenCpts/my-place-hot-item/my-place-hot-item.wxss */
+.place-hot-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12rpx;
+}
+
+.place-hot-item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 27%;
+  background: linear-gradient(0deg,rgba(0,0,0,.8),transparent);
+}
+
+.place-hot-item .image-box {
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.place-hot-item .content {
+  position: absolute;
+  left: 24rpx;
+  bottom: 20rpx;
+  z-index: 2;
+  color: #fff;
+}
+
+.place-hot-item .content .title {
+  font-size: var(--font-size-medium-x);
+  font-weight: 700;
+}
+
+.place-hot-item .content .rating-box .count {
+  font-size: 20rpx;
+  color: hsla(0,0%,100%,.6);
+  margin-left: 8rpx;
+}

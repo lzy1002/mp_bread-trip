@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
+    "my-place-header": "./childrenCpts/my-place-header/my-place-header",
+    "my-place-hot": "./childrenCpts/my-place-hot/my-place-hot"
+  }
+}

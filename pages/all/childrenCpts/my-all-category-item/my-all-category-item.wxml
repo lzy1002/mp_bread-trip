@@ -1,0 +1,15 @@
+<!--pages/all/childrenCpts/my-all-category-item/my-all-category-item.wxml-->
+<view class="all-category-item" bind:tap="categoryItemTap">
+  <view class="image-box">
+    <image src="{{categoryItemData.cover_s}}" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="title">{{categoryItemData.name}}</view>
+    <view class="rating-box">
+      <my-rating ratingType="small" score="{{categoryItemData.rating}}"></my-rating>
+      <text>{{categoryItemData.rating_users}}人点评</text>
+    </view>
+    <view class="desc">{{categoryItemData.recommended_reason}}</view>
+    <view class="been">{{categoryItemData.visited_count}}人去过</view>
+  </view>
+</view>

@@ -6,23 +6,23 @@
     <view class="line"></view>
   </view>
 
-  <view class="basic-item desc">
+  <view wx:if="{{basicData.description}}" class="basic-item desc">
     <view class="name">概况</view>
     <view class="content">{{basicData.description}}</view>
   </view>
-  <view class="basic-item address">
+  <view wx:if="{{basicData.address}}" class="basic-item address">
     <view class="name">地址</view>
     <view class="content">{{basicData.address}}</view>
   </view>
-  <view class="basic-item arrival-type">
+  <view wx:if="{{basicData.arrival_type}}" class="basic-item arrival-type">
     <view class="name">到达方式</view>
     <view class="content">{{basicData.arrival_type}}</view>
   </view>
-  <view class="basic-item open-time">
+  <view wx:if="{{basicData.opening_time}}" class="basic-item open-time">
     <view class="name">开放时间</view>
     <view class="content">{{basicData.opening_time}}</view>
   </view>
-  <view class="basic-item tel">
+  <view wx:if="{{basicData.tel}}" class="basic-item tel">
     <view class="name">联系方式</view>
     <view class="content">{{basicData.tel}}</view>
   </view>

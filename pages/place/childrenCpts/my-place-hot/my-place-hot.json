@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-place-hot-item": "../my-place-hot-item/my-place-hot-item"
+  }
+}

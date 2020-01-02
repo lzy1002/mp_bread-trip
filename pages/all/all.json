@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
+    "my-tab-control": "/components/my-tab-control/my-tab-control",
+    "my-all-category": "./childrenCpts/my-all-category/my-all-category"
+  }
+}

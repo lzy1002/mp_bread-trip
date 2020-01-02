@@ -1,15 +1,12 @@
-// pages/scenic/childrenCpts/my-scenic-header/my-scenic-header.js
+// pages/place/childrenCpts/my-place-header/my-place-header.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    headerData: {
+    placeHeaderData: {
       type: Object,
-      value: {},
-      observer(newVal) {
-        console.log(newVal.rating);
-      }
+      value: {}
     }
   },
 

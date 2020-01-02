@@ -1,0 +1,54 @@
+/* pages/place/childrenCpts/my-place-header/my-place-header.wxss */
+.place-header {
+  position: relative;
+  width: 100%;
+}
+
+.place-header::before {
+  content: "";
+  display: inline-block;
+  padding-bottom: 20%;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
+}
+
+.place-header::after {
+  content: "";
+  display: inline-block;
+  padding-bottom: 20%;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg,transparent,rgba(0,0,0,.4));
+}
+
+.place-header .image-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 63.9%;
+}
+
+.place-header .content-box {
+  position: absolute;
+  left: 30rpx;
+  bottom: 50rpx;
+  z-index: 2;
+  color: #fff;
+}
+
+.place-header .content-box .name {
+  font-size: 60rpx;
+  font-weight: 600;
+}
+
+.place-header .content-box .info {
+  font-size: var(--font-size-small-s);
+  color: hsla(0,0%,100%,.8);
+}

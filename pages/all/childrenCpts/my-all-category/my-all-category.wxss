@@ -1,0 +1,13 @@
+/* pages/all/childrenCpts/my-all-category/my-all-category.wxss */
+.all-category {
+  padding: 0 20rpx;
+}
+
+.all-category .loading {
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.all-category .loading image {
+  width: 220rpx;
+}

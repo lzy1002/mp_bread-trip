@@ -1,0 +1,6 @@
+<!--pages/all/all.wxml-->
+<my-tab-control titleList="{{titleList}}" bind:tabItemTap="tabItemTap"></my-tab-control>
+
+<my-all-category categoryData="{{dataObj[category].list}}"></my-all-category>
+
+<my-loading wx:if="{{dataObj.all.list.length <= 0}}"></my-loading>

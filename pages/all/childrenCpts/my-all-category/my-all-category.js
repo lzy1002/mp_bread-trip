@@ -1,15 +1,12 @@
-// pages/scenic/childrenCpts/my-scenic-header/my-scenic-header.js
+// pages/all/childrenCpts/my-all-category/my-all-category.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    headerData: {
-      type: Object,
-      value: {},
-      observer(newVal) {
-        console.log(newVal.rating);
-      }
+    categoryData: {
+      type: Array,
+      value: []
     }
   },
 

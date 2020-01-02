@@ -1,0 +1,11 @@
+<!--pages/place/childrenCpts/my-place-hot-item/my-place-hot-item.wxml-->
+<view class="place-hot-item" bind:tap="hotItemTap">
+  <view class="image-box" style="background-image: url('{{hotItemData.cover_s}}')"></view>
+  <view class="content">
+    <view class="title">{{hotItemData.name}}</view>
+    <view class="rating-box">
+      <my-rating ratingType="small" score="{{hotItemData.rating}}"></my-rating>
+      <text class="count">{{hotItemData.tips_count}}人点评</text>
+    </view>
+  </view>
+</view>

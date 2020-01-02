@@ -1,0 +1,52 @@
+/* pages/all/childrenCpts/my-all-category-item/my-all-category-item.wxss */
+.all-category-item {
+  display: flex;
+  width: 100%;
+  margin: 16rpx 0;
+}
+
+.all-category-item .image-box {
+  width: 30%;
+  margin-right: 20rpx;
+}
+
+.all-category-item .image-box image {
+  width: 100%;
+}
+
+.all-category-item .content {
+  position: relative;
+  width: 70%;
+  font-size: var(--font-size-small);
+  color: #999;
+}
+
+.all-category-item .content .title {
+  font-size: 34rpx;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--color-text);
+}
+
+.all-category-item .content .rating-box {
+  margin: 8rpx 0;
+}
+
+.all-category-item .content .rating-box text {
+  margin-left: 10rpx;
+}
+
+.all-category-item .content .desc {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.all-category-item .content .been {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

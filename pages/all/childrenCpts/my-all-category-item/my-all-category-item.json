@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-rating": "/components/my-rating/my-rating"
+  }
+}

@@ -1,0 +1,15 @@
+<!--pages/place/childrenCpts/my-place-hot/my-place-hot.wxml-->
+<view class="place-hot">
+  <view class="title-box">
+    <view class="line"></view>
+    <view class="title">热门地点</view>
+    <view class="line"></view>
+  </view>
+  <view class="hot-box">
+    <block wx:for="{{hotData}}" wx:key="index">
+      <my-place-hot-item class="my-place-hot-item" hotItemData="{{item}}"></my-place-hot-item>
+    </block>
+  </view>
+
+  <view class="more-hot" bind:tap="moreHotTap" data->全部热门地点</view>
+</view>

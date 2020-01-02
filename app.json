@@ -5,7 +5,9 @@
     "pages/trip-info/trip-info",
     "pages/waypoint/waypoint",
     "pages/schedule/schedule",
-    "pages/scenic/scenic"
+    "pages/scenic/scenic",
+    "pages/place/place",
+    "pages/all/all"
   ],
   "window": {
     "backgroundTextStyle": "light",
