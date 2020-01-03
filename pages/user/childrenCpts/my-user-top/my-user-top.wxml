@@ -1,0 +1,21 @@
+<!--pages/user/childrenCpts/my-user-top/my-user-top.wxml-->
+<view class="user-top">
+  <view class="image-box" style="background-image: url('{{userTopData.cover}}')"></view>
+  <view class="content">
+    <view class="avatar-box">
+      <view class="avatar-left">
+        <view class="count">{{userTopData.followers_count}}</view>
+        <view class="title">粉丝</view>
+      </view>
+      <view class="avatar-center">
+        <image src="{{userTopData.avatar_m}}" mode="widthFix"></image>
+      </view>
+      <view class="avatar-right">
+        <view class="count">{{userTopData.followings_count}}</view>
+        <view class="title">关注</view>
+      </view>
+    </view>
+    <view class="user-name">{{userTopData.name}}</view>
+    <view class="address">{{userTopData.location_name}}</view>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/photos/photos.wxml-->
+<my-photos photosData="{{photosData}}"></my-photos>
+
+<my-loading wx:if="{{photosData.length <= 0}}"></my-loading>

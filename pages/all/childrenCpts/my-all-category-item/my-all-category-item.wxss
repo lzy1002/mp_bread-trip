@@ -39,6 +39,7 @@
 }
 
 .all-category-item .content .desc {
+  line-height: 28rpx;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;

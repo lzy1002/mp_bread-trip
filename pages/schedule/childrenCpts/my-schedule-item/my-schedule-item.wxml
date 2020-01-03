@@ -12,9 +12,9 @@
       <view class="arrow-right"></view>
     </view>
   </view>
-  <view class="posi-box {{isOpen ? '' : 'off'}} {{scheduleItem.pois.length <= 0 ? 'border-n' : ''}}" style="height: {{scheduleItem.pois.length * 90 + 4}}rpx;">
+  <view class="posi-box {{isOpen ? '' : 'off'}} {{scheduleItem.pois.length <= 0 ? 'border-n' : ''}}" style="height: {{scheduleItem.pois.length * 90}}rpx;">
     <block wx:for="{{scheduleItem.pois}}" wx:key="index">
-      <view class="posi-item" bind:tap="posiItemTap" data-scenicid="{{item.id}}">
+      <view class="posi-item" bind:tap="posiItemTap" data-scenicid="{{item.id}}" data-type="{{item.type}}">
         <view class="icon icon-place-{{item.category}}"></view>
         <view>{{item.name}}</view>
         <view class="posi-arrow-box">

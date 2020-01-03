@@ -18,6 +18,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    profileTap() {
+      wx.switchTab({
+        url: "/pages/profile/profile"
+      })
+    },
+    searchTap() {
+      wx.navigateTo({
+        url: "/pages/search/search"
+      })
+    }
   }
 })

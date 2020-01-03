@@ -1,0 +1,68 @@
+/* pages/user/childrenCpts/my-user-top/my-user-top.wxss */
+.user-top {
+  position: relative;
+  width: 100%;
+}
+
+.user-top::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.user-top .image-box {
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.user-top .content {
+  position: absolute;
+  top: 144rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-top .content .avatar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsla(0,0%,100%,.8);
+  width: 400rpx;
+  text-align: center;
+}
+
+.user-top .content .avatar-box .count {
+  font-size: var(--font-size-large);
+}
+
+.user-top .content .avatar-box .avatar-center {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-top .content .avatar-box .avatar-center image {
+  width: 100%;
+  height: 100%;
+}
+
+.user-top .content .user-name,.address {
+  text-align: center;
+  color: #fff;
+}
+
+.user-top .content .user-name {
+  margin: 30rpx 0;
+}
+
+.user-top .content .address {
+  font-size: var(--font-size-small-s);
+}

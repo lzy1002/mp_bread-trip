@@ -7,6 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    scenicId: "",
+    type: "",
     scenicInfoData: {},
     headerData: {},
     impressionsData: {},
@@ -42,6 +44,11 @@ Page({
   onLoad: function (options) {
     console.log(options);
     const scenicId = options.scenicId;
+    const type = options.type;
+    this.setData({
+      scenicId,
+      type
+    })
     this.getScenicInfoData(scenicId);
     this.getImpressionsData(scenicId);
   },

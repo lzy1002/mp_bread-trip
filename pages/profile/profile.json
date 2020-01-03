@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-profile-top": "./childrenCpts/my-profile-top/my-profile-top",
+    "my-profile-trips": "./childrenCpts/my-profile-trips/my-profile-trips"
+  }
 }

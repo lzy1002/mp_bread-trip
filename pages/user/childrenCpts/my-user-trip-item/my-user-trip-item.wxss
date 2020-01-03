@@ -1,0 +1,66 @@
+/* pages/user/childrenCpts/my-user-trip-item/my-user-trip-item.wxss */
+.user-trip-item {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  border: 1px solid #ccc;
+}
+
+.user-trip-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 560rpx;
+  background: linear-gradient(90deg,rgba(0,0,0,.6) 0, transparent);
+  z-index: 1;
+}
+
+.user-trip-item .image-box {
+  padding-bottom: 50.8%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.user-trip-item .content-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  z-index: 2;
+  padding: 0 30rpx;
+}
+
+.user-trip-item .content-box .title {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  margin-top: 30rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user-trip-item .content-box .date-box {
+  border-left: 3px solid #4abdcc;
+  line-height: 26rpx;
+  padding-left: 6rpx;
+  margin-top: 12rpx;
+  font-size: var(--font-size-small-s);
+}
+
+.user-trip-item .content-box .date-box text {
+  margin-right: 16rpx;
+}
+
+.user-trip-item .content-box .params-box {
+  position: absolute;
+  left: 30rpx;
+  bottom: 22rpx;
+  font-size: var(--font-size-small-s);
+}

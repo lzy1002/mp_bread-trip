@@ -1,0 +1,7 @@
+<!--pages/profile/childrenCpts/my-profile-trips/my-profile-trips.wxml-->
+<view class="profile-trips">
+  <view class="title-box">
+    <text class="title">游记&故事集</text>
+    <text class="num">0</text>
+  </view>
+</view>

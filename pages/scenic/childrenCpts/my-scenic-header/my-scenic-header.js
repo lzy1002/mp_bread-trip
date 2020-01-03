@@ -4,12 +4,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    scenicId: {
+      type: Number,
+      value: 0
+    },
+    type: {
+      type: Number,
+      value: 0
+    },
     headerData: {
       type: Object,
-      value: {},
-      observer(newVal) {
-        console.log(newVal.rating);
-      }
+      value: {}
     }
   },
 
@@ -24,6 +29,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    scenicHeaderTap() {
+      const scenicId = this.properties.scenicId;
+      const type = this.properties.type;
+      wx.navigateTo({
+        url: `/pages/photos/photos?type=${type}&iid=${scenicId}`
+      })
+    }
   }
 })

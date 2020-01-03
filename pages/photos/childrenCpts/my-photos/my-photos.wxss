@@ -1,0 +1,15 @@
+/* pages/photos/childrenCpts/my-photos/my-photos.wxss */
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos .my-photos-item {
+  width: 32.5%;
+  margin-right: 1.25%;
+  margin-bottom: 1.25%;
+}
+
+.photos .my-photos-item:nth-child(3n + 3) {
+  margin-right: 0;
+}

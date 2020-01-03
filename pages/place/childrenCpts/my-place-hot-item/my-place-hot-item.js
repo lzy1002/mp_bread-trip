@@ -23,8 +23,9 @@ Component({
   methods: {
     hotItemTap() {
       const id = this.properties.hotItemData.id;
+      const type = this.properties.hotItemData.type;
       wx.navigateTo({
-        url: `/pages/scenic/scenic?scenicId=${id}`
+        url: `/pages/scenic/scenic?scenicId=${id}&type=${type}`
       })
     }
   }

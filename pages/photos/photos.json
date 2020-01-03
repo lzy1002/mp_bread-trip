@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
+    "my-photos": "./childrenCpts/my-photos/my-photos"
+  }
+}

@@ -23,8 +23,9 @@ Component({
   methods: {
     categoryItemTap() {
       const scenicId = this.properties.categoryItemData.id;
+      const type = this.properties.categoryItemData.type;
       wx.navigateTo({
-        url: `/pages/scenic/scenic?scenicId=${scenicId}`
+        url: `/pages/scenic/scenic?scenicId=${scenicId}&type=${type}`
       })
     }
   }

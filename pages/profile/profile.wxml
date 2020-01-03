@@ -1,2 +1,4 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<my-profile-top></my-profile-top>
+
+<my-profile-trips></my-profile-trips>

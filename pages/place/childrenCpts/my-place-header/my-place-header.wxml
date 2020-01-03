@@ -1,5 +1,5 @@
 <!--pages/place/childrenCpts/my-place-header/my-place-header.wxml-->
-<view class="place-header">
+<view class="place-header" bind:tap="placeHeaderTap">
   <view class="image-box" style="background-image: url('{{placeHeaderData.photo}}')"></view>
   <view class="content-box">
     <view class="name">{{placeHeaderData.name}}</view>

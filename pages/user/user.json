@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
+    "my-user-top": "./childrenCpts/my-user-top/my-user-top",
+    "my-user-trips": "./childrenCpts/my-user-trips/my-user-trips"
+  }
+}

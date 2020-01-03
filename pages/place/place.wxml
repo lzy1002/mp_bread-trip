@@ -1,5 +1,5 @@
 <!--pages/place/place.wxml-->
-<my-place-header placeHeaderData="{{placeHeaderData}}"></my-place-header>
+<my-place-header placeHeaderData="{{placeHeaderData}}" type="{{type}}" iid="{{placeId}}"></my-place-header>
 
 <my-place-hot hotData="{{hotData}}" type="{{type}}" placeId="{{placeId}}"></my-place-hot>
 

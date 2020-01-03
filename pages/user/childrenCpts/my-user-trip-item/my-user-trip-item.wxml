@@ -1,0 +1,20 @@
+<!--pages/user/childrenCpts/my-user-trip-item/my-user-trip-item.wxml-->
+<view class="user-trip-item" bind:tap="userTripItemTap">
+  <view class="image-box" style="background-image: url('{{tripItemData.cover_image_default}}')"></view>
+  <view class="content-box">
+    <view class="title">{{tripItemData.name}}</view>
+    <view class="date-box">
+      <text class="date">{{tripItemData.date_added}}</text>
+      <text class="day">{{tripItemData.day_count}}天</text>
+      <text class="font-print">{{tripItemData.waypoints}}足迹</text>
+    </view>
+
+    <view class="params-box">
+      <text class="browse">{{tripItemData.view_count}} 浏览</text>
+      <text class="line"> / </text>
+      <text class="like">{{tripItemData.liked_count}} 喜欢</text>
+      <text class="line"> / </text>
+      <text class="comment">{{tripItemData.total_comments_count}} 评论</text>
+    </view>
+  </view>
+</view>

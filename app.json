@@ -7,7 +7,9 @@
     "pages/schedule/schedule",
     "pages/scenic/scenic",
     "pages/place/place",
-    "pages/all/all"
+    "pages/all/all",
+    "pages/user/user",
+    "pages/photos/photos"
   ],
   "window": {
     "backgroundTextStyle": "light",

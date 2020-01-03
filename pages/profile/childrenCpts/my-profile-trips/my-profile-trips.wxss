@@ -1,0 +1,21 @@
+/* pages/profile/childrenCpts/my-profile-trips/my-profile-trips.wxss */
+.profile-trips {
+  widows: 100%;
+  padding: 42rpx 20rpx 80rpx;
+}
+
+.profile-trips .title-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+
+.profile-trips .title-box .num {
+  padding: 0 16rpx;
+  background-color: #e8dfc5;
+  border-radius: 20rpx;
+  color: #fff;
+  font-size: var(--font-size-small);
+  line-height: 36rpx;
+}
+

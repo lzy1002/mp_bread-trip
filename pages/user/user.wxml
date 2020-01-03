@@ -1,0 +1,6 @@
+<!--pages/user/user.wxml-->
+<my-user-top userTopData="{{userData.user_info}}"></my-user-top>
+
+<my-user-trips tripsData="{{userData.trips}}"></my-user-trips>
+
+<my-loading wx:if="{{!userData.user_info}}"></my-loading>

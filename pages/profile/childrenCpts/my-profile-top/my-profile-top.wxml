@@ -1,0 +1,22 @@
+<!--pages/profile/childrenCpts/my-profile-top/my-profile-top.wxml-->
+<view class="profile-top">
+  <view class="image-box" style="background-image: url('http://photos.breadtrip.com/default_user_cover_08.jpg-usercover.display')"></view>
+  <view class="content">
+    <view class="avatar-box">
+      <view class="avatar-left">
+        <view class="count">0</view>
+        <view class="title">粉丝</view>
+      </view>
+      <view class="avatar-center">
+        <image src="/assets/images/common/avatar.jpg" mode="widthFix"></image>
+      </view>
+      <view class="avatar-right">
+        <view class="count">0</view>
+        <view class="title">关注</view>
+      </view>
+    </view>
+    <view class="user-name">用户名称</view>
+    <view class="address">地址</view>
+  </view>
+</view>
+

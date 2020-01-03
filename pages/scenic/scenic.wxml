@@ -1,5 +1,5 @@
 <!--pages/scenic/scenic.wxml-->
-<my-scenic-header headerData="{{headerData}}"></my-scenic-header>
+<my-scenic-header headerData="{{headerData}}" scenicId="{{scenicId}}" type="{{type}}"></my-scenic-header>
 
 <my-scenic-impressions impressionsData="{{impressionsData}}"></my-scenic-impressions>
 

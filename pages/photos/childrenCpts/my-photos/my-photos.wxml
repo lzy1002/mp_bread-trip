@@ -1,0 +1,6 @@
+<!--pages/photos/childrenCpts/my-photos/my-photos.wxml-->
+<view class="photos">
+  <block wx:for="{{photosData}}" wx:key="index">
+    <my-photos-item class="my-photos-item" photoItemData="{{item}}"></my-photos-item>
+  </block>
+</view>

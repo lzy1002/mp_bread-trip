@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-photos-item": "../my-photos-item/my-photos-item"
+  }
+}

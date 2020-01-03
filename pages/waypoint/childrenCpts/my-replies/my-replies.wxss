@@ -34,14 +34,15 @@
 
 .comment-box .comment-item {
   display: flex;
+  padding: 20rpx 0;
 }
 
 .comment-box .comment-item .avatar-box {
   width: 76rpx;
-  height: 76rpx;
+  height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 12rpx;
+  margin-right: 18rpx;
 }
 
 .comment-box .comment-item .avatar-box image {
@@ -51,7 +52,13 @@
 
 .comment-box .content {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  font-size: var(--font-size-small);
+}
+
+.comment-box .content .user-name-box {
+  line-height: 28rpx;
 }
 
 .comment-box .content .user-name-box .user-name {
@@ -61,4 +68,5 @@
 .comment-box .content .date-box {
   color: #b0b0b0;
   font-size: var(--font-size-small);
+  padding-top: 10rpx;
 }

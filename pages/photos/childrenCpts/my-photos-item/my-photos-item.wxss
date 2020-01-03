@@ -1,0 +1,13 @@
+/* pages/photos/childrenCpts/my-photos-item/my-photos-item.wxss */
+.photos-item {
+  width: 100%;
+}
+
+.photos-item .image-box {
+  width: 100%;
+}
+
+.photos-item .image-box image {
+  width: 100%;
+  vertical-align: middle;
+}

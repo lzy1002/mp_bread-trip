@@ -11,5 +11,5 @@
     </block>
   </view>
 
-  <view class="more-hot" bind:tap="moreHotTap" data->全部热门地点</view>
+  <view wx:if="{{type !== 1}}" class="more-hot" bind:tap="moreHotTap">全部热门地点</view>
 </view>

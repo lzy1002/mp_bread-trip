@@ -57,17 +57,17 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "旅行详情",
 					"pathName": "pages/trip-info/trip-info",
-					"query": "id=2387365028",
+					"query": "id=2387350307",
 					"scene": null
 				},
 				{
 					"id": 1,
 					"name": "waypoint",
 					"pathName": "pages/waypoint/waypoint",
-					"query": "tripId=2387350453&id=2370862090",
+					"query": "tripId=2387973656&id=2402876227",
 					"scene": null
 				},
 				{
@@ -89,6 +89,20 @@
 					"name": "pages/place/place",
 					"pathName": "pages/place/place",
 					"query": "type=3&placeId=11282",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": "userId=2384341377",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
 					"scene": null
 				}
 			]

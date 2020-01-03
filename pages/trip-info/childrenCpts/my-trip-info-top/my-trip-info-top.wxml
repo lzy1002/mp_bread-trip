@@ -4,7 +4,7 @@
 <view class="trip-top">
 
   <view class="user">
-    <view class="avatar-box">
+    <view class="avatar-box" bind:tap="avatarTap">
       <image src="{{topData.user.avatar_m}}" class="avatar" mode="widthFix"></image>
     </view>
     <view class="user-name">by {{topData.user.name}}</view>

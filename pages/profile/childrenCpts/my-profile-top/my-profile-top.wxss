@@ -1,0 +1,68 @@
+/* pages/profile/childrenCpts/my-profile-top/my-profile-top.wxss */
+.profile-top {
+  position: relative;
+  width: 100%;
+}
+
+.profile-top::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.profile-top .image-box {
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.profile-top .content {
+  position: absolute;
+  top: 144rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-top .content .avatar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsla(0,0%,100%,.8);
+  width: 400rpx;
+  text-align: center;
+}
+
+.profile-top .content .avatar-box .count {
+  font-size: var(--font-size-large);
+}
+
+.profile-top .content .avatar-box .avatar-center {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-top .content .avatar-box .avatar-center image {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-top .content .user-name,.address {
+  text-align: center;
+  color: #fff;
+}
+
+.profile-top .content .user-name {
+  margin: 30rpx 0;
+}
+
+.profile-top .content .address {
+  font-size: var(--font-size-small-s);
+}

@@ -1,0 +1,11 @@
+<!--pages/user/childrenCpts/my-user-trips/my-user-trips.wxml-->
+<view class="user-trips">
+  <view class="title-box">
+    <text class="title">游记&故事集</text>
+    <text class="num">{{tripsData.length}}</text>
+  </view>
+
+  <block wx:for="{{tripsData}}" wx:key="index">
+    <my-user-trip-item tripItemData="{{item}}"></my-user-trip-item>
+  </block>
+</view>

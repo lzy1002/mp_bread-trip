@@ -1,0 +1,6 @@
+<!--pages/photos/childrenCpts/my-photos-item/my-photos-item.wxml-->
+<view class="photos-item" bind:tap="photosItemTap">
+  <view class="image-box">
+    <image src="{{photoItemData.photo_s}}" mode="widthFix"></image>
+  </view>
+</view>

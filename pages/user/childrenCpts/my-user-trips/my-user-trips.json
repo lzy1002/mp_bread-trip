@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-user-trip-item": "../my-user-trip-item/my-user-trip-item"
+  }
+}

@@ -26,6 +26,12 @@ Component({
       wx.navigateTo({
         url: `/pages/schedule/schedule?tripId=${tripId}`
       })
+    },
+    avatarTap() {
+      const userId = this.properties.topData.user.id;
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
     }
   }
 })
