@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-story-day": "../my-story-day/my-story-day"
+  }
+}

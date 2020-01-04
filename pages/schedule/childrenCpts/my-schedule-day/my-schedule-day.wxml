@@ -1,10 +1,12 @@
 <!--pages/schedule/childrenCpts/my-schedule-day/my-schedule-day.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="schedule-day">
   <view class="title">
     <view class="circle {{index === 0 ? 'circle-one' : 'circle-other'}}"></view>
     <view class="date">
       <text>第 {{day.days}} 天</text>
-      <text>{{day.date}}</text>
+      <text>{{filters.replace(day.date)}}</text>
     </view>
   </view>
   <view class="line"></view>

@@ -1,0 +1,27 @@
+/* pages/story/childrenCpts/my-story-day/my-story-day.wxss */
+.story-day {
+
+}
+
+.story-day .date-box {
+  text-align: center;
+  padding: 80rpx 0 20rpx 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #999;
+  font-size: var(--font-size-small);
+}
+
+.story-day .date-box view {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.story-day .date-box .icon-sun {
+  display: inline-block;
+  width: 42rpx;
+  height: 42rpx;
+  background-image: url("https://ae01.alicdn.com/kf/Udd207439e55b48e19bec83260bee86647.png");
+  background-size: 42rpx 42rpx;
+  background-repeat: no-repeat;
+  margin-right: 10rpx;
+}

@@ -1,10 +1,12 @@
 <!--pages/place/childrenCpts/my-place-header/my-place-header.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="place-header" bind:tap="placeHeaderTap">
   <view class="image-box" style="background-image: url('{{placeHeaderData.photo}}')"></view>
   <view class="content-box">
     <view class="name">{{placeHeaderData.name}}</view>
     <view class="info">
-      <text>{{placeHeaderData.visited_count}} 去过</text>
+      <text>{{filters.toK(placeHeaderData.visited_count)}} 去过</text>
       <text> / </text>
       <text>{{placeHeaderData.wish_to_go_count}} 喜欢</text>
     </view>

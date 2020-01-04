@@ -1,0 +1,12 @@
+<!--pages/story/childrenCpts/my-story-day/my-story-day.wxml-->
+<view class="story-day">
+  <view class="date-box">
+    <view class="icon-sun"></view>
+    <view class="date">{{day.day}}</view>
+  </view>
+  <view class="story-item-box">
+    <block wx:for="{{day.spot_list}}" wx:key="index">
+      <my-story-item storyItemData="{{item}}"></my-story-item>
+    </block>
+  </view>
+</view>

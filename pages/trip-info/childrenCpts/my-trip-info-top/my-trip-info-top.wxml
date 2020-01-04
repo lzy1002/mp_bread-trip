@@ -16,7 +16,7 @@
 
   <view class="params">
     <view class="params-item">
-      <view class="first-day">{{topData.first_day}}</view>
+      <view class="first-day">{{filters.replace(topData.first_day)}}</view>
       <view>{{topData.day_count}}天</view>
     </view>
     <view class="params-item">
@@ -58,7 +58,9 @@
     </view>
 
     <view class="address">
-      <view style="background-image: url('{{topData.covered_countries[0].icon}}')" class="city"></view>
+      <block wx:for="{{topData.covered_countries}}" wx:key="id">
+        <view style="background-image: url('{{item.icon}}')" class="city"></view>
+      </block>
       <view class="text">
         <block wx:for="{{topData.cities}}" wx:key="index">
           <text>{{item}}<text class="doc" wx:if="{{index !== topData.cities.length - 1}}">·</text></text>

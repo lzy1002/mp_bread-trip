@@ -1,0 +1,30 @@
+<!--pages/story/childrenCpts/my-story-header/my-story-header.wxml-->
+<view class="story-header">
+  <view class="image-box" style="background-image: url('{{headerData.cover_image_w640}}')">
+    <view class="view-box">
+      <view class="icon-eye"></view>
+      <text class="view-count">{{headerData.view_count}}</text>
+    </view>
+  </view>
+  <view class="content-box">
+    <view class="avatar-box">
+      <image src="{{headerData.user.avatar_m}}" mode="widthFix"></image>
+    </view>
+    <view class="user-name">by {{headerData.user.name}}</view>
+    <view class="title">{{headerData.name}}</view>
+    <view class="info-box">
+      <view class="story">
+        <view class="count">{{headerData.spot_count}}</view>
+        <view class="name">故事</view>
+      </view>
+      <view class="comment">
+        <view class="count">{{headerData.comments_count}}</view>
+        <view class="name">评论</view>
+      </view>
+      <view class="like">
+        <view class="count">{{headerData.recommendations_count}}</view>
+        <view class="name">喜欢</view>
+      </view>
+    </view>
+  </view>
+</view>

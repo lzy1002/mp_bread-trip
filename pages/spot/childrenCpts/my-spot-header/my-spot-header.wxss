@@ -1,0 +1,32 @@
+/* pages/spot/childrenCpts/my-spot-header/my-spot-header.wxss */
+.spot-header {
+  display: flex;
+  margin: 0 40rpx;
+  padding: 98rpx 0 48rpx 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.spot-header .avatar-box {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.spot-header .avatar-box image {
+  width: 100%;
+}
+
+.spot-header .content-box {
+  flex: 1;
+  font-size: var(--font-size-small);
+  color: #999;
+}
+
+.spot-header .content-box .user-name {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  color: #5c5c5c;
+  line-height: 36rpx;
+}

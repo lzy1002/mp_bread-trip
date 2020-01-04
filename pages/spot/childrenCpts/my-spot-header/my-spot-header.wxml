@@ -1,0 +1,11 @@
+<!--pages/spot/childrenCpts/my-spot-header/my-spot-header.wxml-->
+<view class="spot-header">
+  <view class="avatar-box">
+    <image src="{{headerData.avatar_m}}" mode="widthFix"></image>
+  </view>
+  <view class="content-box">
+    <view class="user-name">{{headerData.name}}</view>
+    <view class="happen">故事发生在</view>
+    <view class="view-count">{{headerData.view_count}}浏览</view>
+  </view>
+</view>

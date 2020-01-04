@@ -23,9 +23,17 @@ Component({
   methods: {
     userTripItemTap() {
       const id = this.properties.tripItemData.id;
-      wx.navigateTo({
-        url: `/pages/trip-info/trip-info?id=${id}`
-      })
+      const def = this.properties.tripItemData.default;
+      if(def) {
+        wx.navigateTo({
+          url: `/pages/story/story?id=${id}`
+        })
+      }else {
+        wx.navigateTo({
+          url: `/pages/trip-info/trip-info?id=${id}`
+        })
+      }
+
     }
   }
 })

@@ -92,10 +92,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "user",
 					"pathName": "pages/user/user",
-					"query": "userId=2384341377",
+					"query": "userId=2387859240",
 					"scene": null
 				},
 				{
@@ -103,6 +103,20 @@
 					"name": "profile",
 					"pathName": "pages/profile/profile",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "story",
+					"pathName": "pages/story/story",
+					"query": "id=2387316845",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "spot",
+					"pathName": "pages/spot/spot",
+					"query": "spotId=2387612504",
 					"scene": null
 				}
 			]

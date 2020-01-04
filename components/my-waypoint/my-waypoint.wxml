@@ -15,8 +15,8 @@
       <image src="/assets/images/common/time.png"></image>
       <text class="date">{{waypointData.local_time}}</text>
 
-      <view class="posi-box" wx:if="{{waypointData.poi || waypointData.province}}">
-        <view class="place" wx:if="{{waypointData.poi}}">
+      <view class="posi-box" wx:if="{{waypointData.poi || waypointData.province}}" catch:tap="goScenic" data-type="{{waypointData.poi.type}}" data-scenicid="{{waypointData.poi.id}}">
+        <view class="place" wx:if="{{waypointData.poi}}" >
           <view class="icon icon-place-{{waypointData.poi.category}}"></view>
           <text>{{waypointData.poi.name}}</text>
         </view>

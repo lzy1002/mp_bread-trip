@@ -37,13 +37,13 @@
 }
 
 .rating.rating-small .star.star-all {
-  background-image: url("https://ae01.alicdn.com/kf/Ua0c806e54b4b441a8f46277fcf1cc7bd0.png");
+  background-image: url("https://ae01.alicdn.com/kf/U178a97897a024889b028baf397afde4aQ.png");
 }
 
 .rating.rating-small .star.star-half {
-  background-image: url("https://ae01.alicdn.com/kf/Ua82f36144875485bb5aa6b8619144ac7f.png");
+  background-image: url("https://ae01.alicdn.com/kf/U85c26f03ee244cdf84c80e7540a76f59Z.png");
 }
 
 .rating.rating-small .star.star-none {
-  background-image: url("https://ae01.alicdn.com/kf/U946a09e2b5644a5485883fbbf214a54bO.png");
+  background-image: url("https://ae01.alicdn.com/kf/Uc688269bea5041cbb76501fc43fe5bb04.png");
 }

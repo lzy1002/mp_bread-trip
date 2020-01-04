@@ -3,6 +3,32 @@ var toFixed = function(num, size) {
   return num.toFixed(size);
 }
 
+var replace = function(str) {
+  var str = str || "";
+  return str.replace(getRegExp("-", "g"), ".");
+}
+
+var toW = function(num) {
+  return num >= 10000 ? (num / 10000).toFixed(1) + "万" : num;
+}
+
+var toK = function(num) {
+  return num >= 10000 ? (num / 1000).toFixed(0) + "k" : num;
+}
+
+var formatDate = function(time) {
+  var date = getDate(time * 1000);
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var retDate = year + "." + month + "." + day;
+  return retDate;
+}
+
 module.exports = {
-  toFixed: toFixed
+  toFixed: toFixed,
+  replace: replace,
+  toW: toW,
+  toK: toK,
+  formatDate: formatDate
 }

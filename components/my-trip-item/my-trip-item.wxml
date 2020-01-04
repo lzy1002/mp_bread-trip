@@ -1,17 +1,19 @@
 <!--components/my-tirp-item/my-tirp-item.wxml-->
+<wxs module="filters" src="../../utils/wxs/filters.wxs"></wxs>
+
 <view class="trip-item" bind:tap="tripItemTap" data-id="{{tripItemData.data[0].id}}">
   <view class="cover-image" style="background-image:url('{{tripItemData.data[0].cover_image}}')"></view>
   <view class="content">
     <view class="title">{{tripItemData.data[0].name}}</view>
     <view class="info">
       <view class="day">
-        <text class="date">{{tripItemData.data[0].first_day}}</text>
+        <text class="date">{{filters.replace(tripItemData.data[0].first_day)}}</text>
         <text class="day-count">{{tripItemData.data[0].day_count}}天</text>
-        <text class="view-count">{{tripItemData.data[0].view_count}}浏览</text>
+        <text class="view-count">{{filters.toW(tripItemData.data[0].view_count)}}浏览</text>
       </view>
       <view class="local">{{tripItemData.data[0].popular_place_str}}</view>
     </view>
-    <view class="user">
+    <view class="user" catch:tap="userTap">
       <image src="{{tripItemData.data[0].user.avatar_s}}" mode="widthFix" lazy-load></image>
       <text class="user-name">{{tripItemData.data[0].user.name}}</text>
     </view>

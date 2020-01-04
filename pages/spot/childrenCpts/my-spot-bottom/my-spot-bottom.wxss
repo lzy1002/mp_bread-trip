@@ -1,0 +1,131 @@
+/* pages/spot/childrenCpts/my-spot-bottom/my-spot-bottom.wxss */
+.icon-camera {
+  display: inline-block;
+  width: 32rpx;
+  height: 28rpx;
+  background-image: url("https://ae01.alicdn.com/kf/Ubdaa52e1ed414f8d92b7d76c503e3894k.png");
+  background-size: 32rpx 28rpx;
+  background-repeat: no-repeat;
+  margin-right: 16rpx;
+}
+
+.icon-time {
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  background-image: url("https://ae01.alicdn.com/kf/Ue802ad6a8e094f12b817f7ce4913af0bG.png");
+  background-size: 32rpx 32rpx;
+  background-repeat: no-repeat;
+  margin-right: 16rpx;
+}
+
+.spot-bottom {
+  padding-top: 72rpx;
+  padding-bottom: 200rpx;
+  margin: 0 40rpx;
+}
+
+.spot-bottom .spot-info {
+  padding-bottom: 72rpx;
+}
+
+.spot-bottom .spot-info .trip-name {
+  margin-bottom: 16rpx;
+}
+
+.spot-bottom .spot-info .trip-name text {
+  vertical-align: middle;
+}
+
+.spot-bottom .spot-info .trip-name .name {
+  font-weight: 700;
+  margin-left: 10rpx;
+}
+
+.spot-bottom .spot-info .time-box {
+
+}
+
+.spot-bottom .spot-info .time-box text {
+  vertical-align: middle;
+}
+
+.spot-bottom .like-box {
+  padding-bottom: 50rpx;
+}
+
+.spot-bottom .like-box .count-box {
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.spot-bottom .like-box .count-box .count {
+  color: #5c5c5c;
+  margin-right: 16rpx;
+}
+
+.spot-bottom .like-box .avatar-box {
+
+}
+
+.spot-bottom .like-box .avatar-box .avatar-item {
+  display: inline-block;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 14rpx;
+}
+
+.spot-bottom .like-box .avatar-box .avatar-item image {
+  width: 100%;
+}
+
+.spot-bottom .comment-box {
+
+}
+
+.spot-bottom .comment-box .count-box {
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.spot-bottom .comment-box .count-box .count {
+  color: #5c5c5c;
+  margin-right: 16rpx;
+}
+
+.spot-bottom .comment-box .comment {
+
+}
+
+.spot-bottom .comment-box .comment .comment-item {
+  display: flex;
+  padding: 14rpx 0;
+}
+
+.spot-bottom .comment-box .comment .comment-item .avatar-box {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 18rpx;
+}
+
+.spot-bottom .comment-box .comment .comment-item .avatar-box image {
+  width: 100%;
+}
+
+.spot-bottom .comment-box .comment .comment-item .comment-content {
+  flex: 1;
+}
+
+.spot-bottom .comment-box .comment .comment-item .comment-content .user-name {
+  margin-right: 6rpx;
+  color: #999;
+}
+
+.spot-bottom .comment-box .comment .comment-item .comment-content .date {
+  font-size: var(--font-size-small-s);
+  color: #c9c9c9;
+}

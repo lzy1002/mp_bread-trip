@@ -9,7 +9,9 @@
     "pages/place/place",
     "pages/all/all",
     "pages/user/user",
-    "pages/photos/photos"
+    "pages/photos/photos",
+    "pages/story/story",
+    "pages/spot/spot"
   ],
   "window": {
     "backgroundTextStyle": "light",

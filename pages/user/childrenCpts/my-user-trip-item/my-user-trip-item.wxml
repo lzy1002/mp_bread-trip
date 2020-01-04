@@ -1,10 +1,12 @@
 <!--pages/user/childrenCpts/my-user-trip-item/my-user-trip-item.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="user-trip-item" bind:tap="userTripItemTap">
   <view class="image-box" style="background-image: url('{{tripItemData.cover_image_default}}')"></view>
   <view class="content-box">
     <view class="title">{{tripItemData.name}}</view>
     <view class="date-box">
-      <text class="date">{{tripItemData.date_added}}</text>
+      <text class="date">{{filters.formatDate(tripItemData.date_added)}}</text>
       <text class="day">{{tripItemData.day_count}}天</text>
       <text class="font-print">{{tripItemData.waypoints}}足迹</text>
     </view>

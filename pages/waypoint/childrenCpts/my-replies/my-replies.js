@@ -21,6 +21,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goUser(event) {
+      console.log(event);
+      const userId = event.currentTarget.dataset.userid;
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
+    }
   }
 })

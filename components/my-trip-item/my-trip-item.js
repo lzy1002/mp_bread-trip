@@ -27,6 +27,13 @@ Component({
       wx.navigateTo({
         url: `/pages/trip-info/trip-info?id=${id}`
       })
+    },
+    userTap() {
+      const userId = this.properties.tripItemData.data[0].user.id;
+      console.log(userId);
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
     }
   }
 })

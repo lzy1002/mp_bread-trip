@@ -1,0 +1,69 @@
+/* pages/story/childrenCpts/my-story-item/my-story-item.wxss */
+.story-item {
+  padding-top: 40rpx;
+}
+
+.story-item .title {
+  margin-bottom: 40rpx;
+  white-space: pre-line;
+  line-height: 40rpx;
+}
+
+.story-item .image-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.story-item .image-box .image-item {
+  width: 32.5%;
+  margin-right: 1.25%;
+  margin-bottom: 1.25%;
+}
+
+.story-item .image-box .image-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.story-item .image-box .image-item image {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.story-item .fun-box {
+  display: flex;
+  padding: 20rpx 0;
+  margin-top: 40rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.story-item .fun-box .comment .icon-comment{
+  display: inline-block;
+  width: 40rpx;
+  height: 38rpx;
+  background-image: url("https://ae01.alicdn.com/kf/U71f068b9c98540dbb05383e6cd6b3decI.png");
+  background-size: 40rpx 38rpx;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.story-item .fun-box .like .icon-like{
+  display: inline-block;
+  width: 34rpx;
+  height: 32rpx;
+  background-image: url("https://ae01.alicdn.com/kf/Uf3483ed9547348a4b6ca5d8f49fd7145T.png");
+  background-size: 34rpx 32rpx;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.story-item .fun-box > view {
+  flex: 1;
+  text-align: center;
+}
+
+.story-item .fun-box > view .num {
+  display: inline-block;
+  vertical-align: middle;
+  color: #c9c9c9;
+  margin-left: 10rpx;
+}

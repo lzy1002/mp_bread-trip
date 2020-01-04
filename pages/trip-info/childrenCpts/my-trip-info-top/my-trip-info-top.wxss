@@ -97,7 +97,7 @@
   margin-right: 80rpx;
   white-space: nowrap;
   overflow: hidden;
-  padding: 20rpx 0;
+  padding: 20rpx 0 20rpx 20rpx;
 }
 
 .trip-top .address .city {
@@ -109,7 +109,7 @@
   background-position: center center;
   border-radius: 50%;
   vertical-align: middle;
-  margin: 0 20rpx;
+  margin-right: 10rpx;
 }
 
 .trip-top .address .text {
@@ -128,7 +128,7 @@
 
 .trip-top .address .ellipsis {
   position: absolute;
-  bottom: 80rpx;
+  bottom: 78rpx;
   transform: translateY(-50%);
   right: 14rpx;
   width: 48rpx;

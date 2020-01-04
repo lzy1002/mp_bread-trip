@@ -21,6 +21,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+    goScenic(event) {
+      console.log(event);
+      const {type, scenicid} = event.currentTarget.dataset;
+      if(type !== 5) return;
+      wx.navigateTo({
+        url: `/pages/scenic/scenic?type=${type}&scenicId=${scenicid}`
+      })
+    }
   }
 })

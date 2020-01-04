@@ -1,0 +1,21 @@
+<!--pages/story/childrenCpts/my-story-item/my-story-item.wxml-->
+<view class="story-item">
+  <view class="title">{{storyItemData.text}}</view>
+  <view class="image-box" bind:tap="storyItemTap">
+    <block wx:for="{{storyItemData.detail_list}}" wx:key="index">
+      <view class="image-item">
+        <image src="{{item.photo_s}}" mode="widthFix"></image>
+      </view>
+    </block>
+  </view>
+  <view class="fun-box">
+    <view class="comment">
+      <view class="icon-comment"></view>
+      <view class="num">{{storyItemData.comments_count}}</view>
+    </view>
+    <view class="like">
+      <view class="icon-like"></view>
+      <view class="num">{{storyItemData.recommendations_count}}</view>
+    </view>
+  </view>
+</view>

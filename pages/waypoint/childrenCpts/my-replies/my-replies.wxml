@@ -3,7 +3,7 @@
   <view class="title">{{repliesData.recommender_count}}人喜欢</view>
   <view class="user-box">
     <block wx:for="{{repliesData.recommenders}}" wx:key="index">
-      <view class="user-item">
+      <view class="user-item" bind:tap="goUser" data-userid="{{item.id}}">
         <image src="{{item.avatar_m}}" mode="widthFix"></image>
       </view>
     </block>
@@ -14,7 +14,7 @@
   <view class="title">{{repliesData.comment_count}}人评价</view>
   <block wx:for="{{repliesData.comments}}" wx:key="date_added">
     <view class="comment-item">
-      <view class="avatar-box">
+      <view class="avatar-box" bind:tap="goUser" data-userid="{{item.user.id}}">
         <image src="{{item.user.avatar_m}}" mode="widthFix"></image>
       </view>
       <view class="content">

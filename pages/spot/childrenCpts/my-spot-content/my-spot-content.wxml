@@ -1,0 +1,16 @@
+<!--pages/spot/childrenCpts/my-spot-content/my-spot-content.wxml-->
+<view class="spot-content">
+  <view class="title">{{contentData.text}}</view>
+  <block wx:for="{{contentData.detail_list}}" wx:key="index">
+    <view class="content-item">
+      <view class="image-box">
+        <image src="{{item.photo}}" mode="widthFix"></image>
+        <view wx:if="{{item.text}}" class="arrow-box">
+          <view class="left"></view>
+          <view class="right"></view>
+        </view>
+      </view>
+      <view wx:if="{{item.text}}" class="text">{{item.text}}</view>
+    </view>
+  </block>
+</view>

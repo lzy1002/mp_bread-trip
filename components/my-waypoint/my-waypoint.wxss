@@ -177,6 +177,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--color-theme);
+  z-index: 10;
 }
 
 .waypoint .content .date-box .posi-box .place,.posi {
