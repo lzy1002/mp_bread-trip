@@ -1,5 +1,5 @@
 import {request} from "./request.js";
-// http://m.breadtrip.com/api/v2/new_trip/?trip_id=2387459612
+
 export function getStoryData(id) {
   return request({
     url: "/v2/new_trip",

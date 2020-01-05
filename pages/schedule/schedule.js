@@ -14,13 +14,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const tripId = options.tripId;
     this.getScheduleData(tripId);
   },
   getScheduleData(tripId) {
     getScheduleData(tripId).then(res => {
-      console.log(res);
       const scheduleData = res.data;
       this.setData({
         scheduleData

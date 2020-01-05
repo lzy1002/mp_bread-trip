@@ -1,10 +1,10 @@
 <!--pages/spot/childrenCpts/my-spot-header/my-spot-header.wxml-->
 <view class="spot-header">
-  <view class="avatar-box">
+  <view class="avatar-box" bind:tap="userTap">
     <image src="{{headerData.avatar_m}}" mode="widthFix"></image>
   </view>
   <view class="content-box">
-    <view class="user-name">{{headerData.name}}</view>
+    <view class="user-name" bind:tap="userTap">{{headerData.name}}</view>
     <view class="happen">故事发生在</view>
     <view class="view-count">{{headerData.view_count}}浏览</view>
   </view>

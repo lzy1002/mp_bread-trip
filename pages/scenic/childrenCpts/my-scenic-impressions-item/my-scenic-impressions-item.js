@@ -36,7 +36,6 @@ Component({
     },
     impressionsItemTap() {
       const tripId = this.properties.impressionsItemData.trip.id;
-      console.log(tripId);
       wx.navigateTo({
         url: `/pages/trip-info/trip-info?id=${tripId}`
       })
@@ -46,7 +45,6 @@ Component({
     attached() {
       wx.getSystemInfo({
         success: (res) => {
-          console.log(res);
           const windowWidth = res.windowWidth;
           this.setData({
             windowWidth

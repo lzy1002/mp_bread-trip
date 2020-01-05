@@ -16,11 +16,9 @@ Page({
   },
   getScenicInfoData(scenicId) {
     getScenicInfoData(scenicId).then(res => {
-      console.log(res);
       const scenicInfoData = res.data;
       const headerData = new ScenicHeader(scenicInfoData);
       const basicData = new ScenicBasic(scenicInfoData);
-      console.log(headerData);
       this.setData({
         scenicInfoData,
         headerData,
@@ -30,7 +28,6 @@ Page({
   },
   getImpressionsData(scenicId) {
     getImpressionsData(scenicId).then(res => {
-      console.log(res);
       const impressionsData = res.data;
       this.setData({
         impressionsData
@@ -42,7 +39,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const scenicId = options.scenicId;
     const type = options.type;
     this.setData({

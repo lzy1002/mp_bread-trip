@@ -25,10 +25,23 @@ var formatDate = function(time) {
   return retDate;
 }
 
+var dateAndWeek = function(time) {
+  var time = time || "";
+  var newTime = time.split("T")[0];
+  var date = getDate(newTime);
+  var weekNum = date.getDay();
+  var year = date.getFullYear();
+  var month = (date.getMonth() + 1) >= 10 ? (date.getMonth() + 1) : "0" + (date.getMonth() + 1);
+  var day = date.getDate() >= 10 ? date.getDate() : "0" + date.getDate();
+  var weekArr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+  return year + "." + month + "." + day + " " + weekArr[weekNum];
+}
+
 module.exports = {
   toFixed: toFixed,
   replace: replace,
   toW: toW,
   toK: toK,
-  formatDate: formatDate
+  formatDate: formatDate,
+  dateAndWeek: dateAndWeek
 }

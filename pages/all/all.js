@@ -32,7 +32,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const {type, placeId} = options;
     this.setData({
       type,
@@ -49,7 +48,6 @@ Page({
     let start = this.data.dataObj[category].start;
 
     getAllData(type, placeId, category, start).then(res => {
-      console.log(res);
       const resList = res.data.items;
       let list = this.data.dataObj[category].list;
       list.push(...resList);
@@ -64,7 +62,6 @@ Page({
   },
   tabItemTap(event) {
     const category = event.detail.category;
-    console.log(category);
     this.setData({
       category
     })

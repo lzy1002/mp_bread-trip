@@ -11,7 +11,6 @@ Page({
   },
   getIndexData() {
     getIndexData().then(res => {
-      console.log(res);
       this.setData({
         indexData: res.data.data.elements
       })

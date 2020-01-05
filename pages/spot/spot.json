@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
     "my-spot-header": "./childrenCpts/my-spot-header/my-spot-header",
     "my-spot-content": "./childrenCpts/my-spot-content/my-spot-content",
     "my-spot-bottom": "./childrenCpts/my-spot-bottom/my-spot-bottom"

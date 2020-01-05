@@ -12,7 +12,6 @@ Page({
   },
   getStoryData(id) {
     getStoryData(id).then(res => {
-      console.log(res);
       const storyData = res.data.data;
       const headerData = new StoryHeader(storyData);
       this.setData({
@@ -26,7 +25,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const id = options.id;
     this.getStoryData(id);
   },

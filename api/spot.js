@@ -14,6 +14,7 @@ export class SpotHeader {
     this.name = spotData.trip.user.name;
     this.avatar_m = spotData.trip.user.avatar_m;
     this.view_count = spotData.spot.view_count;
+    this.id = spotData.trip.user.id;
   }
 }
 

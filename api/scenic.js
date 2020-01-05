@@ -28,6 +28,8 @@ export class ScenicBasic {
     this.address = scenicInfoData.address;
     this.arrival_type = scenicInfoData.arrival_type;
     this.opening_time = scenicInfoData.opening_time;
+    this.fee = scenicInfoData.fee;
     this.tel = scenicInfoData.tel;
+    this.website = scenicInfoData.website;
   }
 }

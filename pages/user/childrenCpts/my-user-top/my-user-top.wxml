@@ -18,4 +18,5 @@
     <view class="user-name">{{userTopData.name}}</view>
     <view class="address">{{userTopData.location_name}}</view>
   </view>
+
 </view>

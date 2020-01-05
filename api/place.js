@@ -7,7 +7,6 @@ export function getPlaceData(type, placeId) {
 }
 
 export function getHotData(type, placeId, start, count) {
-  console.log(type, placeId)
   return request({
     url: `/destination/place/${type}/${placeId}/pois/all`,
     data: {

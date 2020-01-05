@@ -1,4 +1,6 @@
 <!--pages/waypoint/chilidrenCpts/my-replies/my-replies.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="recommend-box">
   <view class="title">{{repliesData.recommender_count}}人喜欢</view>
   <view class="user-box">
@@ -22,7 +24,7 @@
           <text class="user-name">{{item.user.name}}: </text>
           <text class="text">{{item.comment}}</text>
         </view>
-        <view class="date-box">{{item.date_added}}</view>
+        <view class="date-box">{{filters.formatDate(item.date_added)}}</view>
       </view>
     </view>
   </block>

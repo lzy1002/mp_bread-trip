@@ -22,7 +22,6 @@ Component({
    */
   methods: {
     goUser(event) {
-      console.log(event);
       const userId = event.currentTarget.dataset.userid;
       wx.navigateTo({
         url: `/pages/user/user?userId=${userId}`

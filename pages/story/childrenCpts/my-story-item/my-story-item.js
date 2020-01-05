@@ -23,10 +23,15 @@ Component({
   methods: {
     storyItemTap() {
       const spotId = this.properties.storyItemData.spot_id;
-      console.log(spotId);
-      wx.navigateTo({
-        url: `/pages/spot/spot?spotId=${spotId}`
-      })
+      if (getCurrentPages().length > 9) {  // 当进入当前页面时有可能在小程序的页面栈中的页面已经等于10 那么再使用navigateTo进行跳转会失败 所以这里判断当前页面栈中的页面是否大于9 如果大于9那么改为使用redirectTo跳转
+        wx.redirectTo({
+          url: `/pages/spot/spot?spotId=${spotId}`
+        })
+      }else {
+        wx.navigateTo({
+          url: `/pages/spot/spot?spotId=${spotId}`
+        })
+      }
     }
   }
 })

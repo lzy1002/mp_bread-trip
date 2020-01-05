@@ -40,6 +40,7 @@
 .user-trip-item .content-box .title {
   font-size: var(--font-size-large);
   font-weight: 600;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
   margin-top: 30rpx;
   white-space: nowrap;
   text-overflow: ellipsis;

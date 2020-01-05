@@ -22,8 +22,16 @@
     <view class="name">开放时间</view>
     <view class="content">{{basicData.opening_time}}</view>
   </view>
+  <view wx:if="{{basicData.fee}}" class="basic-item fee">
+    <view class="name">人均消费</view>
+    <view class="content">{{basicData.fee}}</view>
+  </view>
   <view wx:if="{{basicData.tel}}" class="basic-item tel">
     <view class="name">联系方式</view>
     <view class="content">{{basicData.tel}}</view>
+  </view>
+  <view wx:if="{{basicData.website}}" class="basic-item website">
+    <view class="name">官方网站</view>
+    <view class="content">{{basicData.website}}</view>
   </view>
 </view>

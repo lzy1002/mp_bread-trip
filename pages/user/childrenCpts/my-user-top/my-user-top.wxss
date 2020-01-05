@@ -27,15 +27,15 @@
   top: 144rpx;
   left: 50%;
   transform: translateX(-50%);
+  width: 80%;
 }
 
 .user-top .content .avatar-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: hsla(0,0%,100%,.8);
-  width: 400rpx;
   text-align: center;
+  width: 100%;
 }
 
 .user-top .content .avatar-box .count {
@@ -47,6 +47,10 @@
   height: 160rpx;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.user-top .content .avatar-box .avatar-left,.avatar-right {
+  flex: 1;
 }
 
 .user-top .content .avatar-box .avatar-center image {

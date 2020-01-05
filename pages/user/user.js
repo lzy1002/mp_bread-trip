@@ -14,13 +14,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.userId);
     const userId = options.userId;
     this.getUserData(userId);
   },
   getUserData(userId) {
     getUserData(userId).then(res => {
-      console.log(res);
       const userData = res.data.data;
       this.setData({
         userData

@@ -27,7 +27,6 @@ Component({
       })
     },
     posiItemTap(event) {
-      console.log(event.currentTarget.dataset);
       const scenicId = event.currentTarget.dataset.scenicid;
       const type = event.currentTarget.dataset.type;
       wx.navigateTo({

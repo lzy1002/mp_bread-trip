@@ -40,6 +40,7 @@
 
 .trip-item .content .title {
   font-size: var(--font-size-large);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
   font-weight: 600;
   margin-bottom: 12rpx;
 }
@@ -70,4 +71,5 @@
 
 .trip-item .content .user .user-name {
   vertical-align: middle;
+  font-size: var(--font-size-small);
 }

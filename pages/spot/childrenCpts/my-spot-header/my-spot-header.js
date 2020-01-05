@@ -21,6 +21,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    userTap() {
+      const userId = this.properties.headerData.id;
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
+    }
   }
 })

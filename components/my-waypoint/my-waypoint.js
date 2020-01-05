@@ -22,7 +22,6 @@ Component({
    */
   methods: {
     goScenic(event) {
-      console.log(event);
       const {type, scenicid} = event.currentTarget.dataset;
       if(type !== 5) return;
       wx.navigateTo({

@@ -14,8 +14,8 @@
       <view class="local">{{tripItemData.data[0].popular_place_str}}</view>
     </view>
     <view class="user" catch:tap="userTap">
-      <image src="{{tripItemData.data[0].user.avatar_s}}" mode="widthFix" lazy-load></image>
-      <text class="user-name">{{tripItemData.data[0].user.name}}</text>
+      <image src="{{tripItemData.data[0].user.avatar_m}}" mode="widthFix" lazy-load></image>
+      <text class="user-name">by {{tripItemData.data[0].user.name}}</text>
     </view>
   </view>
 </view>

@@ -1,6 +1,5 @@
 /* pages/scenic/childrenCpts/my-scenic-basic/my-scenic-basic.wxss */
 .scenic-basic {
-
   margin: 0 20rpx 10rpx;
 }
 
@@ -52,6 +51,10 @@
 .scenic-basic .basic-item {
   padding: 30rpx 0;
   border-bottom: 1px solid #eee;
+}
+
+.scenic-basic .basic-item:last-child {
+  border-bottom: none;
 }
 
 .scenic-basic .basic-item .name {

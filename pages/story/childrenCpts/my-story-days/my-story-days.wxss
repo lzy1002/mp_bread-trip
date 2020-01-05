@@ -1,6 +1,6 @@
 /* pages/story/childrenCpts/my-story-days/my-story-days.wxss */
 .story-days {
-  padding: 0 20rpx;
+  padding: 0 20rpx 120rpx;
 }
 
 .story-days .back-top {
@@ -10,6 +10,6 @@
   border: 1px solid #c9c9c9;
   text-align: center;
   line-height: 84rpx;
-  margin: 120rpx auto;
+  margin: 120rpx auto 0;
   color: #999;
 }

@@ -4,5 +4,5 @@
     <my-story-day day="{{item}}"></my-story-day>
   </block>
 
-  <view class="back-top">回到顶部</view>
+  <view class="back-top" bind:tap="backTop">回到顶部</view>
 </view>

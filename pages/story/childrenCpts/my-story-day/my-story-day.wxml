@@ -1,8 +1,10 @@
 <!--pages/story/childrenCpts/my-story-day/my-story-day.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="story-day">
   <view class="date-box">
     <view class="icon-sun"></view>
-    <view class="date">{{day.day}}</view>
+    <view class="date">{{filters.dateAndWeek(day.day)}}</view>
   </view>
   <view class="story-item-box">
     <block wx:for="{{day.spot_list}}" wx:key="index">

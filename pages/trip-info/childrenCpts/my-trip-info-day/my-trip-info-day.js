@@ -22,7 +22,6 @@ Component({
    */
   methods: {
     waypointTap(event) {
-      console.log(event.currentTarget.dataset);
       const tripId = event.currentTarget.dataset.trip_id;
       const id = event.currentTarget.dataset.id;
       wx.navigateTo({

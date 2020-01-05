@@ -23,8 +23,8 @@ Component({
   methods: {
     userTripItemTap() {
       const id = this.properties.tripItemData.id;
-      const def = this.properties.tripItemData.default;
-      if(def) {
+      const waypoints = this.properties.tripItemData.waypoints;
+      if (waypoints === 0) {
         wx.navigateTo({
           url: `/pages/story/story?id=${id}`
         })
@@ -33,7 +33,6 @@ Component({
           url: `/pages/trip-info/trip-info?id=${id}`
         })
       }
-
     }
   }
 })

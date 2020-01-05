@@ -16,13 +16,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const spotId = options.spotId;
     this.getSpotData(spotId);
   },
   getSpotData(spotId) {
     getSpotData(spotId).then(res => {
-      console.log(res);
       const spotData = res.data.data;
       const headerData = new SpotHeader(spotData);
       const bottomData = new SpotBottom(spotData);

@@ -13,7 +13,6 @@ Page({
 
   getWaypointData(tripId, id) {
     getWaypointData(tripId, id).then(res => {
-      console.log(res);
       const waypointData = res.data;
       this.setData({
         waypointData
@@ -23,7 +22,6 @@ Page({
   getRepliesData(tripId, id) {
     getRepliesData(tripId, id).then(res => {
       const repliesData = res.data;
-      console.log(res);
       this.setData({
         repliesData
       })
@@ -35,7 +33,6 @@ Page({
    */
   onLoad: function (options) {
     const {tripId, id} = options;
-    console.log(tripId, id);
     this.getWaypointData(tripId, id);
     this.getRepliesData(tripId, id);
   },

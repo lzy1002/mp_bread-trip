@@ -16,7 +16,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#4abdcc",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "面包旅行",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -24,17 +24,18 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "/assets/images/tabbar/index_normal.png",
-        "selectedIconPath": "/assets/images/tabbar/index_pressed.png"
+        "iconPath": "/assets/images/tabbar/index.png",
+        "selectedIconPath": "/assets/images/tabbar/index_active.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
-        "iconPath": "/assets/images/tabbar/explore_normal.png",
-        "selectedIconPath": "/assets/images/tabbar/explore_pressed.png"
+        "iconPath": "/assets/images/tabbar/profile.png",
+        "selectedIconPath": "/assets/images/tabbar/profile_active.png"
       }
     ],
-    "selectedColor": "#4abdcc"
+    "selectedColor": "#4abdcc",
+    "color": "#5c5c5c"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

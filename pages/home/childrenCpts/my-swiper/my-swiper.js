@@ -24,7 +24,6 @@ Component({
    */
   methods: {
     imageLoad(event) {
-      console.log(event);
       const width = event.detail.width;
       const height = event.detail.height;
       const ratio = width / height;

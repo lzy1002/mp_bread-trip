@@ -21,6 +21,23 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    goStory() {
+      const id = this.properties.bottomData.id;
+      wx.navigateTo({
+        url: `/pages/story/story?id=${id}`
+      })
+    },
+    likeUserTap(event) {
+      const userId = event.currentTarget.dataset.userid;
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
+    },
+    commentUserTap(event) {
+      const userId = event.currentTarget.dataset.userid;
+      wx.navigateTo({
+        url: `/pages/user/user?userId=${userId}`
+      })
+    }
   }
 })

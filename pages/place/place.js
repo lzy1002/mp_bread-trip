@@ -18,7 +18,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const type = options.type;
     const placeId = options.placeId;
     this.setData({
@@ -30,7 +29,6 @@ Page({
   },
   getPlaceData(type, placeId) {
     getPlaceData(type, placeId).then(res => {
-      console.log(res);
       const placeData = res.data;
       const placeHeaderData = new PlaceHeader(placeData);
       this.setData({
@@ -41,7 +39,6 @@ Page({
   },
   getHotData(type, placeId, start, count) {
     getHotData(type, placeId, start, count).then(res => {
-      console.log(res);
       const hotData = res.data.items;
       this.setData({
         hotData

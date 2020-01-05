@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "my-loading": "/components/my-loading/my-loading",
     "my-story-header": "./childrenCpts/my-story-header/my-story-header",
     "my-story-days": "./childrenCpts/my-story-days/my-story-days"
   }

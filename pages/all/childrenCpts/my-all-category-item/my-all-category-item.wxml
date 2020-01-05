@@ -9,7 +9,7 @@
       <my-rating ratingType="small" score="{{categoryItemData.rating}}"></my-rating>
       <text>{{categoryItemData.rating_users}}人点评</text>
     </view>
-    <view class="desc">{{categoryItemData.recommended_reason}}</view>
+    <view wx:if="{{categoryItemData.recommended_reason}}" class="desc">{{categoryItemData.recommended_reason}}</view>
     <view class="been">{{categoryItemData.visited_count}}人去过</view>
   </view>
 </view>

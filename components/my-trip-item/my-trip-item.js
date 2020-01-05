@@ -22,7 +22,6 @@ Component({
    */
   methods: {
     tripItemTap(event) {
-      console.log(event.currentTarget.dataset.id);
       const id = event.currentTarget.dataset.id;
       wx.navigateTo({
         url: `/pages/trip-info/trip-info?id=${id}`
@@ -30,7 +29,6 @@ Component({
     },
     userTap() {
       const userId = this.properties.tripItemData.data[0].user.id;
-      console.log(userId);
       wx.navigateTo({
         url: `/pages/user/user?userId=${userId}`
       })

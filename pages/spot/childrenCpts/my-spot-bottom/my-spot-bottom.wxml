@@ -1,14 +1,16 @@
 <!--pages/spot/childrenCpts/my-spot-bottom/my-spot-bottom.wxml-->
+<wxs module="filters" src="../../../../utils/wxs/filters.wxs"></wxs>
+
 <view class="spot-bottom">
   <view class="spot-info">
     <view class="trip-name">
       <text class="icon-camera"></text>
       <text>故事收录于</text>
-      <text class="name">{{bottomData.name}}</text>
+      <text class="name" bind:tap="goStory">{{bottomData.name}}</text>
     </view>
     <view class="time-box">
       <text class="icon-time"></text>
-      <text class="time">{{bottomData.date_added}}</text>
+      <text class="time">{{filters.dateAndWeek(bottomData.date_added)}}</text>
     </view>
   </view>
 
@@ -19,7 +21,7 @@
     </view>
     <view class="avatar-box">
       <block wx:for="{{bottomData.recommendations}}" wx:key="index">
-        <view class="avatar-item">
+        <view class="avatar-item" bind:tap="likeUserTap" data-userid="{{item.id}}">
           <image src="{{item.avatar_m}}" mode="widthFix"></image>
         </view>
       </block>
@@ -34,7 +36,7 @@
     <view class="comment">
       <block wx:for="{{bottomData.comments}}" wx:key="id">
         <view class="comment-item">
-          <view class="avatar-box">
+          <view class="avatar-box" bind:tap="commentUserTap" data-userid="{{item.user.id}}">
             <image src="{{item.user.avatar_m}}" mode="widthFix"></image>
           </view>
           <view class="comment-content">
@@ -42,7 +44,7 @@
               <text class="user-name">{{item.user.name}}：</text> 
               {{item.comment}}
             </view>
-            <view class="date">{{item.date_added}}</view>
+            <view class="date">{{filters.formatDate(item.date_added)}}</view>
           </view>
         </view>
       </block>

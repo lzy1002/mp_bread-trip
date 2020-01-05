@@ -2,3 +2,5 @@
 <my-story-header headerData="{{headerData}}"></my-story-header>
 
 <my-story-days days="{{storyData.day_list}}"></my-story-days>
+
+<my-loading wx:if="{{!storyData.day_list}}"></my-loading>

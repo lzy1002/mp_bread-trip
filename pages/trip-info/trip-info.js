@@ -15,20 +15,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.id);
     const id = options.id;
     this.getTripData(id);
   },
   getTripData(id) {
     getTripData(id).then(res => {
-      console.log(res);
       const tripData = res.data;
       const topData = new TripTop(tripData);
       this.setData({
         tripData,
         topData
       })
-      console.log(this.data.topData);
     })
   },
 

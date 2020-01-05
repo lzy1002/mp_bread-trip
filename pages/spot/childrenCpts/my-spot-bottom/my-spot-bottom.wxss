@@ -128,4 +128,5 @@
 .spot-bottom .comment-box .comment .comment-item .comment-content .date {
   font-size: var(--font-size-small-s);
   color: #c9c9c9;
+  margin-top: 10rpx;
 }

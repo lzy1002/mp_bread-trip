@@ -14,15 +14,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     const type = options.type;
     const iid = options.iid;
     this.getPhotosData(type, iid);
-
   },
   getPhotosData(type, iid) {
     getPhotosData(type, iid).then(res => {
-      console.log(res);
       const photosData = res.data.items;
       this.setData({
         photosData

@@ -6,7 +6,29 @@ Component({
   properties: {
     score: {
       type: Number,
-      value: 0
+      value: -1,
+      observer(newVal) {
+        const score = newVal;
+        const integer = Math.floor(score);
+        const decimal = score - integer;
+        const classList = [];
+        for (let i = 0; i < integer; i++) {
+          classList.push("star-all");
+        }
+
+        if (decimal > 0) {
+          classList.push("star-half");
+        }
+
+        const diff = 5 - classList.length;
+        for (let k = 0; k < diff; k++) {
+          classList.push("star-none");
+        }
+
+        this.setData({
+          classList
+        })
+      }
     },
     ratingType: {
       type: String,
@@ -26,32 +48,5 @@ Component({
    */
   methods: {
 
-  },
-  lifetimes: {
-    attached() {
-      const score = this.properties.score;
-      console.log(score);
-      const integer = Math.floor(score);
-      const decimal = score - integer;
-      const classList = [];
-      for(let i = 0; i< integer; i++) {
-        classList.push("star-all");
-      }
-
-      if(decimal > 0) {
-        classList.push("star-half");
-      }
-
-      const diff = 5 - classList.length;
-      for(let k = 0; k< diff; k++) {
-        classList.push("star-none");
-      }
-
-      this.setData({
-        classList
-      })
-
-      console.log(classList);
-    }
   }
 })

@@ -4,3 +4,5 @@
 <my-spot-content contentData="{{spotData.spot}}"></my-spot-content>
 
 <my-spot-bottom bottomData="{{bottomData}}"></my-spot-bottom>
+
+<my-loading wx:if="{{!spotData.spot}}"></my-loading>
